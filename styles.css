@@ -1,0 +1,196 @@
+/* Color Palette
+rgb(0,131,178);
+rgb(26,195,255);
+rgb(0,188,255);
+rgb(178,92,0);
+rgb(255,131,0); */
+
+html, body{
+    font-family: 'Roboto', serif;
+    margin: 0;
+    margin-top: 28px;
+    padding: 0;
+    background: rgba(0,0,0,0.01);
+  }
+  
+  h2#header-name.header-text-content {
+     margin: 0 14px; 
+  }
+  
+  h1, h2, h3, h4, h5{
+    font-family: 'Roboto Slab', serif; 
+    letter-spacing: .08em;
+  }
+  
+  h2{
+    color: rgb(178,92,0);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  
+  h3, h3 > .school-name, .work-name{
+  /*   font-weight: lighter;  */ 
+    margin: 0 auto;
+    color: rgb(0,131,178);
+    border-bottom: none;
+    padding-bottom: 0;
+    transition: border-bottom .25s ease, padding-bottom .5ms ease;
+  }
+  
+  .work-name:hover, .school-name:hover{
+      border-bottom: 1px solid rgb(0,131,178);
+    padding-bottom: 1.5px;
+  }
+  
+  hr{
+    height: 1px;
+    background: rgba(178,92,0, 0.2);
+    border: none;
+    margin: 40px 0;
+  }
+  
+  .header-bg{
+    border-top: 1px solid white;
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+    padding: 30px 0;
+    background: rgb(0,131,178);
+  /*   background: rgba(178,92,0, 0.8); */
+  /*   background: #ccc; */
+  }
+  
+  .header-bg-mobile { 
+    display: none;
+    background: rgb(0,131,178); 
+    text-align: center; 
+    padding: 30px 0;
+  }
+  
+  .header-bg h1, .header-bg h2, .header-bg p{
+     width: 80%;
+     margin: 0 auto;
+  }
+  
+  .header-bg img{
+    width:100%;
+    margin: auto 0;
+    padding-top: 140px; 
+  }
+  
+  section{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  section p{
+    letter-spacing: .5px;
+    line-height: 1.4em;
+    font-weight: lighter;
+  }  
+  
+  .school-name, .work-name{
+     text-decoration: none; 
+  }
+  
+  .school-logo{
+     padding-right: 8px; 
+  }
+  
+  /* Header & Footer 
+  ------------------------------------*/
+  
+  /* Footer START */
+  ul{
+     list-style-type: none;
+     display: inline;
+  }
+  
+  /* ul a{
+   text-decoration: none; 
+  } */
+  
+  ul a{
+    padding: 14px;
+    letter-spacing: .5px;
+    transition: all .4s ease;
+  }
+  
+  ul a:visited, ul a:link, ul a:active{
+      color: black;
+  }
+  
+  ul a:hover{
+    color: rgb(178,92,0);
+  }
+  
+  .footer-links.contact-info{
+     padding: 20px; 
+  }
+  
+  ul.footer-links.contact-info{ padding: 0; }
+  
+  .fas.fa-envelope{ font-size: 1.5em;}
+  .fab.fa-twitter{ font-size: 1.5em; }
+  .fas.fa-columns{ font-size: 1.5em; }
+  .fab.fa-facebook{ font-size: 1.5em; }
+  .fab.fa-linkedin{ font-size: 1.5em; }
+  
+  /* Footer END */
+  
+  .nav{
+    overflow: hidden;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.01);
+    background-color: white;
+    opacity: .96;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+  }
+  
+  .nav a{
+    letter-spacing: 0.2vh;
+    color: black;
+    float: left;
+    text-transform: uppercase; 
+    text-align: center;
+    font-size: .8em;
+    padding: 20px 18px;
+    text-decoration: none;
+    background: transparent;
+    transition: all 0.4s ease;
+    font-weight: 400;
+  }
+  
+  .nav a:hover{
+    color: white;
+    background: rgb(0,131,178);
+  /*   background: rgba(178,92,0,0.8); */
+    cursor: pointer;
+  }
+  
+  #current{
+     color: white;
+     background: rgb(178,92,0); 
+  }
+  
+  /* Work Experience
+  ------------------------------------*/
+  .degree{
+     font-weight: 400;
+    margin-top: 0
+  }
+  
+  
+  /* Education
+  ------------------------------------*/
+  
+  .school-desc{
+    margin-top: 0;
+  } 
+  
+  @media only screen and (max-width: 720px){
+    .header-bg{ display:none; }
+    .header-bg-mobile{ display: block;}
+  }
