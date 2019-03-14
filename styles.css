@@ -12,135 +12,135 @@ html, body{
     padding: 0;
     scroll-behavior: smooth;
     background: rgba(0,0,0,0.01);
-  }
+}
 
-  h2#header-name.header-text-content {
-     margin: 0 14px;
-  }
+h2#header-name.header-text-content {
+   margin: 0 14px;
+}
 
-  h1, h2, h3, h4, h5{
-    font-family: 'Roboto Slab', serif;
-    letter-spacing: .08em;
-  }
+h1, h2, h3, h4, h5{
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: .08em;
+}
 
-  h2{
-    color: rgb(178,92,0);
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-  }
+h2{
+  color: rgb(178,92,0);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
 
-  h3, h3 > .school-name, .work-name{
-    margin: 0 auto;
-    color: rgb(0,131,178);
-    border-bottom: none;
-    padding-bottom: 0;
-    transition: border-bottom .25s ease, padding-bottom .5ms ease;
-  }
+h3, h3 > .school-name, .work-name{
+  margin: 0 auto;
+  color: rgb(0,131,178);
+  border-bottom: none;
+  padding-bottom: 0;
+  transition: border-bottom .25s ease, padding-bottom .5ms ease;
+}
 
-  .work-name:hover, .school-name:hover{
-      border-bottom: 1px solid rgb(0,131,178);
-    padding-bottom: 1.5px;
-  }
+.work-name:hover, .school-name:hover{
+    border-bottom: 1px solid rgb(0,131,178);
+  padding-bottom: 1.5px;
+}
 
-  hr{
-    height: 1px;
-    background: rgba(178,92,0, 0.2);
-    border: none;
-    margin: 40px 0;
-  }
+hr{
+  height: 1px;
+  background: rgba(178,92,0, 0.2);
+  border: none;
+  margin: 40px 0;
+}
 
-  .header-bg{
-    border-top: 1px solid white;
-    width: 100%;
-    height: auto;
-    margin: auto 0;
-    padding: 30px 0;
-    background: rgb(0,131,178);
-    transition: 0.2s;
-  }
+.header-bg{
+  border-top: 1px solid white;
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+  padding: 30px 0;
+  background: rgb(0,131,178);
+  transition: 0.2s;
+}
 
-  .header-bg-mobile {
-    display: none;
-    background: rgb(0,131,178);
-    text-align: center;
-    padding: 30px 0;
-  }
+.header-bg-mobile {
+  display: none;
+  background: rgb(0,131,178);
+  text-align: center;
+  padding: 30px 0;
+}
 
-  .header-bg h1, .header-bg h2, .header-bg p{
-     width: 80%;
-     margin: 0 auto;
-  }
-
-  .header-bg img{
-    width:100%;
-    margin: auto 0;
-    padding-top: 140px;
-  }
-
-  section{
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  section p{
-    letter-spacing: .5px;
-    line-height: 1.4em;
-    font-weight: lighter;
-  }
-
-  .school-name, .work-name{
-     text-decoration: none;
-  }
-
-  .school-logo{
-     padding-right: 8px;
-  }
-
-  /* Header & Footer
-  ------------------------------------*/
-  /* Footer START */
-
-  .education{
-    background: url('https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fnumber-education-classroom-brand-font-school-1201352-pxhere.com.jpg?1552437216395') top right;
- }
-
- .education-alpha{
-    background: rgba(255,255,255,0.6);
-    padding: 40px 0;
- }
-
- .footer-mobile{
-   display: none;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px 0;
-    background: rgb(0,131,178);
- }
-
- .footer{
+.header-bg h1, .header-bg h2, .header-bg p{
+   width: 80%;
    margin: 0 auto;
-   padding: 40px 0;
-   background: rgb(0,131,178);
- }
+}
 
-  ul{
-     list-style-type: none;
-     display: inline;
-  }
+.header-bg img{
+  width:100%;
+  margin: auto 0;
+  padding-top: 140px;
+}
 
-  ul a{
-    padding: 14px;
-    letter-spacing: .5px;
-    transition: all .4s ease;
-  }
+section{
+  width: 80%;
+  margin: 0 auto;
+}
 
-  ul a:visited, ul a:link, ul a:active{
-      color: black;
-  }
+section p{
+  letter-spacing: .5px;
+  line-height: 1.4em;
+  font-weight: lighter;
+}
 
-  .footer-links.contact-info{
-     padding: 20px;
-  }
+.school-name, .work-name{
+   text-decoration: none;
+}
+
+.school-logo{
+   padding-right: 8px;
+}
+
+/* Header & Footer
+------------------------------------*/
+/* Footer START */
+
+.education{
+  background: url('https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fnumber-education-classroom-brand-font-school-1201352-pxhere.com.jpg?1552437216395') top right;
+}
+
+.education-alpha{
+  background: rgba(255,255,255,0.6);
+  padding: 40px 0;
+}
+
+.footer-mobile{
+ display: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+  background: rgb(0,131,178);
+}
+
+.footer{
+ margin: 0 auto;
+ padding: 40px 0;
+ background: rgb(0,131,178);
+}
+
+ul{
+   list-style-type: none;
+   display: inline;
+}
+
+ul a{
+  padding: 14px;
+  letter-spacing: .5px;
+  transition: all .4s ease;
+}
+
+ul a:visited, ul a:link, ul a:active{
+    color: black;
+}
+
+.footer-links.contact-info{
+   padding: 20px;
+}
 
 ul.footer-links.contact-info{ padding: 0; }
 
@@ -157,56 +157,59 @@ ul.footer-links.contact-info{ padding: 0; }
 
   /* Footer END */
 
-  .nav{
-    overflow: hidden;
-    top: 0px;
-    position: fixed;
-    width: 100%;
-    background: rgba(0,0,0,0.01);
-    background-color: white;
-    opacity: .96;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
+#nav{
+  top: 0;
+  transition: top .25s;
+}
 
-  .nav a{
-    letter-spacing: 0.2vh;
-    color: black;
-    float: left;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: .8em;
-    padding: 20px 18px;
-    text-decoration: none;
-    background: transparent;
-    transition: all 0.4s ease;
-    font-weight: 400;
-  }
+.nav{
+  overflow: hidden;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.01);
+  background-color: white;
+  opacity: .96;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
-  .nav a:hover{
-    color: white;
-    background: rgb(0,131,178);
-    cursor: pointer;
-  }
+.nav a{
+  letter-spacing: 0.2vh;
+  color: black;
+  float: left;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: .8em;
+  padding: 20px 18px;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.4s ease;
+  font-weight: 400;
+}
+
+.nav a:hover{
+  color: white;
+  background: rgb(0,131,178);
+  cursor: pointer;
+}
 
   /* Work Experience
   ------------------------------------*/
-  .degree{
-     font-weight: 400;
-    margin-top: 0
-  }
+.degree{
+   font-weight: 400;
+  margin-top: 0
+}
 
   /* Education
   ------------------------------------*/
 
-  .school-desc{
-    margin-top: 0;
+.school-desc{
+  margin-top: 0;
+}
 
-  }
-
-  @media only screen and (max-width: 720px){
-    .header-bg{ display:none; }
-    .header-bg-mobile{ display: block;}
-    .footer{ display: none;}
-    .footer-mobile{ display: block;}
-
-  }
+@media only screen and (max-width: 720px){
+  .header-bg{ display:none; }
+  .header-bg-mobile{ display: block;}
+  .footer{ display: none;}
+  .footer-mobile{ display: block;}
+}
