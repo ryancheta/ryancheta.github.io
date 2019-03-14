@@ -105,6 +105,12 @@ html, body{
  .education-alpha{
     background: rgba(255,255,255,0.5); 
  }
+ footer{
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 40px 0;
+    background: rgb(0,131,178);
+ }
 
   ul{
      list-style-type: none;
