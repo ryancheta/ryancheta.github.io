@@ -206,7 +206,7 @@ ul.footer-links.contact-info{ padding: 0; }
   @media only screen and (max-width: 720px){
     .header-bg{ display:none; }
     .header-bg-mobile{ display: block;}
-    div.footer{ display: none;}
+    .footer{ display: none;}
     .footer-mobile{ display: block;}
 
   }
