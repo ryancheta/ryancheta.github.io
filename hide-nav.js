@@ -12,3 +12,19 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+function showNav(e){
+  var bottom = document.getElementsByClassName("nav")[0].clientHeight;
+
+  if(( e.clientY <= bottom)) {
+    document.getElementsByClassName("nav")[0].style.top = "0";
+  }
+}
+
+function mouseOut( e ){
+  var navHeight = (-1) * document.getElementsByClassName('nav')[0].offsetHeight;  
+  
+  if( e.clientY >= navHeight && window.pageYOffset != 0 ){
+    document.getElementsByClassName('nav')[0].style.top = navHeight + "px";
+  }
+}
