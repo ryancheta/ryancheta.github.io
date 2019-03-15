@@ -102,6 +102,7 @@ section p{
 
 .education{
   background: url('https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fnumber-education-classroom-brand-font-school-1201352-pxhere.com.jpg?1552437216395') top right;
+  background-size: cover;
 }
 
 .education-alpha{
@@ -159,7 +160,7 @@ ul.footer-links.contact-info{ padding: 0; }
 
 #nav{
   top: 0;
-  transition: top .25s;
+  transition: top .5s;
 }
 
 .nav{
