@@ -17,7 +17,8 @@ function showNav(e){
   var bottom = document.getElementsByClassName("nav")[0].clientHeight;
   var y = e.clientY;
   console.log(y);
-  
+  console.log("I'm printing!!");
+
   if(( e.clientY <= bottom)) {
     document.getElementsByClassName("nav")[0].style.top = "0";
   }
@@ -28,7 +29,8 @@ function mouseOut( e ){
   
   if( e.clientY >= navHeight && window.pageYOffset != 0 ){
     document.getElementsByClassName('nav')[0].style.top = navHeight + "px";
-  } else {
+  } 
+  else if(window.pageYOffset == 0){
     document.getElementsByClassName("nav")[0].style.top = "0";
   }
 }
