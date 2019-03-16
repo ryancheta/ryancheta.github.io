@@ -28,6 +28,8 @@ function mouseOut( e ){
   
   if( e.clientY >= navHeight && window.pageYOffset != 0 ){
     document.getElementsByClassName('nav')[0].style.top = navHeight + "px";
+  } else {
+    document.getElementsByClassName("nav")[0].style.top = "0";
   }
 }
 
