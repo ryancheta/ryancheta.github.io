@@ -103,12 +103,13 @@ section p{
 
 .education{
   /* background: url('https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fnumber-education-classroom-brand-font-school-1201352-pxhere.com.jpg?1552437216395') top right; */
-  background: url('https://physioguru.com/images/2018/01/12/Online%20education.jpg');
+  /* background: url('/assets/img-studying-flat.jpg'); */
+  background: url('/assets/img-typing-on-laptop.jpg');
   background-size: cover;
 }
 
 .education-alpha{
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.6);
   padding: 40px 0;
 }
 
