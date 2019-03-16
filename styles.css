@@ -19,6 +19,10 @@ h2#header-name.header-text-content {
    margin: 0 14px;
 }
 
+.work-exp-wrap{ 
+  padding: 40px 0;
+}
+
 h1, h2, h3, h4, h5{
   font-family: 'Roboto Slab', serif;
   letter-spacing: .08em;
@@ -235,4 +239,5 @@ ul.footer-links.contact-info{ padding: 0; }
   .footer-mobile{ display: block;}
   .education{display: none;}
   .education-mobile{display: block;}
+  .work-exp-wrap{text-align: center;}
 }

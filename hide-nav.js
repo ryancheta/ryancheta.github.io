@@ -35,4 +35,33 @@ function mouseOut( e ){
   }
 }
 
+if( window.pageYOffset == 0 ){
+  document,getElementsByClassName("nav")[0].style.top = "0";
+}
+
+var request = new XMLHttpRequest()
+var base_url = 'https://swapi.co/api/'
+
+function baseContextUrl( context ){
+  return base_url + context
+}
+
+console.log( baseContextUrl('films'))
+
+var filmsUrl = baseContextUrl('films')
+
+request.open('GET', filmsUrl, true)
+request.setRequestHeader("Content-Type", "application/json")
+request.withCredentials = true
+request.onload = function() {
+  var starWars = JSON.parse(this.response);
+  
+    console.log(starWars.results[0].title)
+    console.log("I'm in the function")
+    // starWars.forEach( movie => {
+    //   console.log(movie.results.title);
+    // })
+}
+
+request.send()
 console.log("fudge you!!");
