@@ -15,7 +15,9 @@ window.onscroll = function() {
 
 function showNav(e){
   var bottom = document.getElementsByClassName("nav")[0].clientHeight;
-
+  var y = e.clientY;
+  console.log(y);
+  
   if(( e.clientY <= bottom)) {
     document.getElementsByClassName("nav")[0].style.top = "0";
   }
@@ -28,3 +30,5 @@ function mouseOut( e ){
     document.getElementsByClassName('nav')[0].style.top = navHeight + "px";
   }
 }
+
+console.log("fudge you!!");
