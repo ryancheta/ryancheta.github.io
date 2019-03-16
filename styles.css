@@ -97,6 +97,10 @@ section p{
    padding-right: 8px;
 }
 
+.school-logo-mobile{
+  padding-bottom: 14px;
+}
+
 /* Header & Footer
 ------------------------------------*/
 /* Footer START */
@@ -104,12 +108,24 @@ section p{
 .education{
   /* background: url('https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fnumber-education-classroom-brand-font-school-1201352-pxhere.com.jpg?1552437216395') top right; */
   /* background: url('/assets/img-studying-flat.jpg'); */
-  background: url('/assets/img-typing-on-laptop.jpg');
+  background: url('/assets/img-typing-on-laptop.jpg') center;
   background-attachment: scroll;
   background-size: cover;
 }
 
 .education-alpha{
+  background: rgba(255,255,255,0.6);
+  padding: 40px 0;
+}
+
+.education-mobile{
+  display: none;
+  background: url('/assets/img-typing-on-laptop.jpg') center right;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.education-mobile-alpha{
   background: rgba(255,255,255,0.6);
   padding: 40px 0;
 }
@@ -217,4 +233,6 @@ ul.footer-links.contact-info{ padding: 0; }
   .header-bg-mobile{ display: block;}
   .footer{ display: none;}
   .footer-mobile{ display: block;}
+  .education{display: none;}
+  .education-mobile{display: block;}
 }
