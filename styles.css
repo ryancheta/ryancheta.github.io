@@ -134,13 +134,13 @@ section p{
   padding: 40px 0;
 }
 
-.footer-mobile{
+/* .footer-mobile{
  display: none;
   margin: 0 auto;
   text-align: center;
   padding: 40px 0;
   background: rgb(0,131,178);
-}
+} */
 
 .footer{
  margin: 0 auto;
@@ -235,8 +235,7 @@ ul.footer-links.contact-info{ padding: 0; }
 @media only screen and (max-width: 720px){
   .header-bg{ display:none; }
   .header-bg-mobile{ display: block;}
-  .footer{ display: none;}
-  .footer-mobile{ display: block;}
+  .footer{ text-align: center; margin: 0 auto}
   .education{display: none;}
   .education-mobile{display: block;}
   .work-exp-wrap{text-align: center;}
