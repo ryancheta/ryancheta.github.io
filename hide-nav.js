@@ -10,6 +10,9 @@ window.onscroll = function() {
   } else {
     document.getElementsByClassName("nav")[0].style.top = navHeight + "px";
   }
+  if( window.pageYOffset <= 20 ){
+    document.getElementsByClassName("nav")[0].style.top = "0";
+  }
   prevScrollpos = currentScrollPos;
 }
 
@@ -33,10 +36,6 @@ function mouseOut( e ){
   else if(window.pageYOffset == 0){
     document.getElementsByClassName("nav")[0].style.top = "0";
   }
-}
-
-if( window.pageYOffset == 0 ){
-  document,getElementsByClassName("nav")[0].style.top = "0";
 }
 
 var request = new XMLHttpRequest()
