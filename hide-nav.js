@@ -35,10 +35,6 @@ function mouseOut( e ){
   }
 }
 
-if( window.pageYOffset == 0 ){
-  document,getElementsByClassName("nav")[0].style.top = "0";
-}
-
 var request = new XMLHttpRequest()
 var base_url = 'https://swapi.co/api/'
 

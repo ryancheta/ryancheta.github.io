@@ -12,6 +12,7 @@ html, body{
     margin-top: 28px;
     padding: 0;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: smooth;
     background: rgba(0,0,0,0.01);
 }
 
@@ -39,6 +40,7 @@ h3, h3 > .school-name, .work-name{
   color: rgb(0,131,178);
   border-bottom: none;
   padding-bottom: 0;
+  -webkit-transition: border-bottom .25s ease, padding-bottom .5ms ease;
   transition: border-bottom .25s ease, padding-bottom .5ms ease;
 }
 
