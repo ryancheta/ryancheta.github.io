@@ -10,7 +10,7 @@ window.onscroll = function() {
   } else {
     document.getElementsByClassName("nav")[0].style.top = navHeight + "px";
   }
-  if( window.pageYOffset <= 20 ){
+  if( window.pageYOffset <= 10 ){
     document.getElementsByClassName("nav")[0].style.top = "0";
   }
   prevScrollpos = currentScrollPos;
