@@ -13,7 +13,7 @@ html, body{
     padding: 0;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: smooth;
-    background: rgba(0,0,0,0.01);
+    background: rgba(0,0,0,0.02);
 }
 
 h2#header-name.header-text-content {
@@ -120,7 +120,8 @@ section p{
 }
 
 .education-alpha{
-  background: rgba(255,255,255,0.6);
+  background: linear-gradient(to right,rgba(255,255,255,0.7), rgba(255,255,255,0.35) );
+  /* background: rgba(255,255,255,0.6); */
   padding: 40px 0;
 }
 
