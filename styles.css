@@ -191,6 +191,7 @@ ul.footer-links.contact-info{ padding: 0; }
   /* Footer END */
 
 #nav{
+  z-index: 1;
   top: 0;
   transition: top .6s;
 }
