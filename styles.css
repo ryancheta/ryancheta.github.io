@@ -196,7 +196,7 @@ ul.footer-links.contact-info{ padding: 0; }
 }
 
 .nav{
-  z-index: 1;
+/*   z-index: 1; */
 /*   overflow: hidden; */
   top: 0;
   position: fixed;
