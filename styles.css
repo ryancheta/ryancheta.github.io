@@ -197,13 +197,13 @@ ul.footer-links.contact-info{ padding: 0; }
 
 .nav{
   z-index: 1;
-  overflow: hidden;
+/*   overflow: hidden; */
   top: 0;
   position: fixed;
   width: 100%;
   background: rgba(0,0,0,0.01);
   background-color: white;
-  opacity: .96;
+  opacity: .9;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
