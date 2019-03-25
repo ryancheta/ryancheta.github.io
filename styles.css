@@ -190,10 +190,10 @@ ul.footer-links.contact-info{ padding: 0; }
 
   /* Footer END */
 
-/* #nav{
+#nav{
   top: 0;
   transition: top .6s;
-} */
+}
 
 .nav{
   z-index: 1;
@@ -205,7 +205,6 @@ ul.footer-links.contact-info{ padding: 0; }
   background-color: white;
   opacity: .96;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: top .6s;
 }
 
 .nav a{
