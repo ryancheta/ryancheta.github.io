@@ -5,6 +5,11 @@ rgb(0,188,255);
 rgb(178,92,0);
 rgb(255,131,0); */
 
+:root{
+  --myBlue: rgb(0, 131, 178);
+  --myOrange: rgb(178,92,0);
+}
+
 html, body{
     overflow-x: hidden;
     font-family: 'Roboto', serif;
@@ -31,22 +36,27 @@ h1, h2, h3, h4, h5{
 }
 
 h2{
-  color: rgb(178,92,0);
+  color: var(--myOrange);
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
 h3, h3 > .school-name, .work-name{
   margin: 0 auto;
-  color: rgb(0,131,178);
+  color: var(--myBlue);
   border-bottom: none;
   padding-bottom: 0;
   -webkit-transition: border-bottom .25s ease, padding-bottom .5ms ease;
   transition: border-bottom .25s ease, padding-bottom .5ms ease;
 }
 
+.date-range{
+  font-weight: 700;
+  color: rgba(0,0,0,0.7);
+}
+
 .work-name:hover, .school-name:hover{
-    border-bottom: 1px solid rgb(0,131,178);
+    border-bottom: 1px solid var(--myBlue);
   padding-bottom: 1.5px;
 }
 
@@ -63,13 +73,13 @@ hr{
   height: auto;
   margin: auto 0;
   padding: 60px 0;
-  background: rgb(0,131,178);
+  background: var(--myBlue);
   transition: 0.2s;
 }
 
 .header-bg-mobile {
   display: none;
-  background: rgb(0,131,178);
+  background: var(--myBlue);
   text-align: center;
   padding: 60px 0;
 }
@@ -211,7 +221,7 @@ ul.footer-links.contact-info{ padding: 0; }
 .nav a{
   letter-spacing: 0.2vh;
   /* color: black; */
-  color: rgb(0,131,178);
+  color: var(--myBlue);
   float: left;
   text-transform: uppercase;
   text-align: center;
@@ -225,7 +235,7 @@ ul.footer-links.contact-info{ padding: 0; }
 
 .nav a:hover{
   color: white;
-  background: rgb(0,131,178);
+  background: var(--myBlue);
   cursor: pointer;
 }
 
