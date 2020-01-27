@@ -19,8 +19,8 @@ window.onscroll = function() {
 function showNav(e){
   var bottom = document.getElementsByClassName("nav")[0].clientHeight;
   var y = e.clientY;
-  console.log(y);
-  console.log("I'm printing!!");
+  // console.log(y);
+  // console.log("I'm printing!!");
 
   if(( e.clientY <= bottom)) {
     document.getElementsByClassName("nav")[0].style.top = "0";

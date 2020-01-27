@@ -15,7 +15,7 @@ html, body{
     font-family: 'Roboto', serif;
     /* font-family: 'Noto Sans', sans-serif; */
     margin: 0;
-    margin-top: 28px;
+    /* margin-top: 28px; */
     padding: 0;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: smooth;
@@ -206,11 +206,11 @@ ul.footer-links.contact-info{ padding: 0; }
   transition: top .6s;
 }
 
-.nav{
-  z-index: 1;
-/*   overflow: hidden; */
-  top: 0;
-  position: fixed;
+#nav{
+  z-index: 100;
+  overflow: hidden;
+  /* top: 0; */
+  position: sticky;
   width: 100%;
   background: rgba(0,0,0,0.01);
   background-color: white;
@@ -242,7 +242,7 @@ ul.footer-links.contact-info{ padding: 0; }
   /* Work Experience
   ------------------------------------*/
 .degree{
-   font-weight: 400;
+  font-weight: 400;
   margin-top: 0
 }
 
