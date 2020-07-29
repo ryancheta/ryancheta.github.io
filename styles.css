@@ -163,13 +163,9 @@ section p {
   padding: 40px 0;
 }
 
-/* .footer-mobile{
- display: none;
-  margin: 0 auto;
-  text-align: center;
-  padding: 40px 0;
-  background: rgb(0,131,178);
-} */
+.education-item-container {
+  padding: 1rem 0;
+}
 
 .footer {
   margin: 0 auto;
@@ -328,4 +324,11 @@ ul.footer-links.contact-info {
   .work-exp-wrap {
     text-align: center;
   }
+}
+
+.job {
+  padding: 0.5em 0;
+}
+.header-description {
+  line-height: 1.5 !important;
 }
