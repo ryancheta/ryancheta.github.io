@@ -13,7 +13,7 @@ rgb(255,131,0); */
 html,
 body {
   overflow-x: hidden;
-  font-family: "Roboto", serif;
+  font-family: 'Helvetica', 'Roboto', sans-serif;
   /* font-family: 'Noto Sans', sans-serif; */
   margin: 0;
   /* margin-top: 28px; */
@@ -36,7 +36,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   letter-spacing: 0.08em;
 }
 
@@ -136,7 +136,7 @@ section p {
 .education {
   /* background: url('https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fnumber-education-classroom-brand-font-school-1201352-pxhere.com.jpg?1552437216395') top right; */
   /* background: url('/assets/img-studying-flat.jpg'); */
-  background: url("/assets/img-typing-on-laptop.jpg") center;
+  background: url('/assets/img-typing-on-laptop.jpg') center;
   background-attachment: scroll;
   background-size: cover;
 }
@@ -153,7 +153,7 @@ section p {
 
 .education-mobile {
   display: none;
-  background: url("/assets/img-typing-on-laptop.jpg") center right;
+  background: url('/assets/img-typing-on-laptop.jpg') center right;
   background-attachment: scroll;
   background-size: cover;
 }
