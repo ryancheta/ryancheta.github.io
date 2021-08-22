@@ -295,6 +295,13 @@ ul.footer-links.contact-info {
 .degree {
   font-weight: 400;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .degree {
+    margin-bottom: 1rem;
+  }
 }
 
 /* Education
