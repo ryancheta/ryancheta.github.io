@@ -8,12 +8,13 @@ rgb(255,131,0); */
 :root {
   --myBlue: rgb(0, 131, 178);
   --myOrange: rgb(178, 92, 0);
+  --max-width: 1360px;
 }
 
 html,
 body {
   overflow-x: hidden;
-  font-family: 'Helvetica', 'Roboto', sans-serif;
+  font-family: "Helvetica", "Roboto", sans-serif;
   /* font-family: 'Noto Sans', sans-serif; */
   margin: 0;
   /* margin-top: 28px; */
@@ -36,7 +37,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   letter-spacing: 0.08em;
 }
 
@@ -75,13 +76,16 @@ hr {
   margin: 40px 0;
 }
 
-.header-bg {
-  border-top: 1px solid white;
-  width: 100%;
-  height: auto;
-  margin: auto 0;
-  padding: 60px 0;
+.header {
   background: var(--myBlue);
+}
+
+.header-bg {
+  /* border-top: 1px solid white; */
+  width: 80%;
+  height: auto;
+  /* margin: auto 0; */
+  padding: 100px 0 60px;
   transition: 0.2s;
 }
 
@@ -136,7 +140,7 @@ section p {
 .education {
   /* background: url('https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fnumber-education-classroom-brand-font-school-1201352-pxhere.com.jpg?1552437216395') top right; */
   /* background: url('/assets/img-studying-flat.jpg'); */
-  background: url('/assets/img-typing-on-laptop.jpg') center;
+  background: url("/assets/img-typing-on-laptop.jpg") center;
   background-attachment: scroll;
   background-size: cover;
 }
@@ -153,7 +157,7 @@ section p {
 
 .education-mobile {
   display: none;
-  background: url('/assets/img-typing-on-laptop.jpg') center right;
+  background: url("/assets/img-typing-on-laptop.jpg") center right;
   background-attachment: scroll;
   background-size: cover;
 }
@@ -252,28 +256,35 @@ ul.footer-links.contact-info {
 
 /* Footer END */
 
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 #nav {
   top: 0;
   transition: top 0.6s;
+  display: inline-flex;
 }
 
 #nav {
   z-index: 100;
   overflow: hidden;
-  /* top: 0; */
-  position: sticky;
-  width: 100%;
   background: rgba(0, 0, 0, 0.01);
   background-color: white;
   opacity: 0.9;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav a {
+  width: 80%;
+  flex-basis: fit-content;
   letter-spacing: 0.2vh;
-  /* color: black; */
   color: var(--myBlue);
-  float: left;
   text-transform: uppercase;
   text-align: center;
   font-size: 0.8em;
@@ -317,6 +328,7 @@ ul.footer-links.contact-info {
   }
   .header-bg-mobile {
     display: block;
+    padding-top: 120px;
   }
   .footer {
     text-align: center;
@@ -338,4 +350,13 @@ ul.footer-links.contact-info {
 }
 .header-description {
   line-height: 1.5 !important;
+}
+
+.sides-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: var(--max-width);
 }

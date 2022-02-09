@@ -1,216 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Ryan Ancheta Resume">
-  <meta name="description" content="Ryan Ancheta Front-End ReactJS developer software engineer software developer" />
-  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-16x16.ico"/>
-  <link rel="icon" type="image/x-icon" href="/assets/favicon-16x16.ico"/>
-  <meta property="og:image" content="https://lh3.googleusercontent.com/eHggFbVulwoqNeUheD2zjqbdYsZmbzcClbdNl1tjIChGEBlrgwwPAyZ1vfrO7VXcHEhOQb1ICyS1EC4H_CNYKtNoX-5hQ-1GsaHXh4HEf33yHN_d93c7FQprkmkQ3BUmwwURCWkJkw=s1024-no">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Ryan Ancheta Resume" />
+    <meta
+      name="description"
+      content="Ryan Ancheta Front-End ReactJS developer software engineer software developer"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/favicon-16x16.ico"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-16x16.ico" />
+    <meta
+      property="og:image"
+      content="https://lh3.googleusercontent.com/eHggFbVulwoqNeUheD2zjqbdYsZmbzcClbdNl1tjIChGEBlrgwwPAyZ1vfrO7VXcHEhOQb1ICyS1EC4H_CNYKtNoX-5hQ-1GsaHXh4HEf33yHN_d93c7FQprkmkQ3BUmwwURCWkJkw=s1024-no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
 
-  <!-- links -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Roboto+Slab:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" type="text/css">
-  <!-- links -->
+    <!-- links -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Roboto+Slab:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <!-- links -->
 
-  <title>Ryan Ancheta | Resume</title>
-</head>
-<body >
-  <div class="nav background-light" id="nav">
-      <a href="#">home</a>
-      <a href="#work-experience">work experience</a>
-      <a href="#education">education</a>
+    <title>Ryan Ancheta | Resume</title>
+  </head>
+  <body>
+    <div class="nav-container background-light">
+      <nav class="nav container sides-auto" id="nav">
+        <a href="#">home</a>
+        <a href="#work-experience">work experience</a>
+        <a href="#education">education</a>
+      </nav>
     </div>
     <!-- // Intro -->
-    <header>
-      <div class="header-bg">
-        <table style="width: 80%; margin: 0 auto;">
+    <header class="header">
+      <div class="header-bg container sides-auto">
+        <table>
           <tr>
             <td>
-              <img src="./assets/avatar.png" loading="lazy" style="border-radius: 50%; height: 160px; width: auto; padding: 0; box-shadow: 4px 1px 16px rgba(0,0,0,0.4); object-fit: cover; filter: saturate(0);">
+              <img
+                src="./assets/avatar.png"
+                loading="lazy"
+                style="
+                  border-radius: 50%;
+                  height: 160px;
+                  width: auto;
+                  padding: 0;
+                  box-shadow: 4px 1px 16px rgba(0, 0, 0, 0.4);
+                  object-fit: cover;
+                  filter: saturate(0);
+                "
+              />
             </td>
             <td>
-              <h2 style="color: white;" id="header-name" class="header-text-content">Ryan Ancheta</h2>
-              <p style="font-weight: 500; color: white; margin: 0 14px;">
+              <h2
+                style="color: white"
+                id="header-name"
+                class="header-text-content"
+              >
+                Ryan Ancheta
+              </h2>
+              <p style="font-weight: 500; color: white; margin: 0 14px">
                 Software Engineer
               </p>
-              <p class="header-description" style="color: white; font-weight: lighter; padding-top: 8px; line-height: 1.2em; margin: 0 14px;">
-                I am currently working as a full-time ReactJS developer at Saucey Inc., the alcohol delivery company in West Hollywood California. 
+              <p
+                class="header-description"
+                style="
+                  color: white;
+                  font-weight: lighter;
+                  padding-top: 8px;
+                  line-height: 1.2em;
+                  margin: 0 14px;
+                "
+              >
+                I am currently working as a full-time ReactJS developer at
+                Saucey Inc., the alcohol delivery company in West Hollywood
+                California.
               </p>
             </td>
           </tr>
         </table>
       </div>
       <div class="header-bg-mobile">
-        <img src="https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fchedda.png?1551856721270https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fchedda.png?1551856721270" loading="lazy" style="border-radius: 50%; height: 160px; width: auto; padding: 0; box-shadow: 4px 1px 16px rgba(0,0,0,0.4)">
-        <h2 style="color: white; margin-bottom: 0;">Ryan Ancheta</h2>
-              <p  style="font-weight: 500; color: white; margin: 0 14px; line-height: 1.2em">
-                Software Engineer
-              </p>
-              <p class="header-description" style="color: white; font-weight: lighter; padding-top: 8px; line-height: 1.2em; width: 80%; margin: 0 auto;">
-                I am currently working as a full-time ReactJS developer at Saucey Inc., the alcohol delivery company in West Hollywood California. 
-              </p>
+        <img
+          src="https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fchedda.png?1551856721270https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fchedda.png?1551856721270"
+          loading="lazy"
+          style="
+            border-radius: 50%;
+            height: 160px;
+            width: auto;
+            padding: 0;
+            box-shadow: 4px 1px 16px rgba(0, 0, 0, 0.4);
+          "
+        />
+        <h2 style="color: white; margin-bottom: 0">Ryan Ancheta</h2>
+        <p
+          style="
+            font-weight: 500;
+            color: white;
+            margin: 0 14px;
+            line-height: 1.2em;
+          "
+        >
+          Software Engineer
+        </p>
+        <p
+          class="header-description"
+          style="
+            color: white;
+            font-weight: lighter;
+            padding-top: 8px;
+            line-height: 1.2em;
+            width: 80%;
+            margin: 0 auto;
+          "
+        >
+          I am currently working as a full-time ReactJS developer at Saucey
+          Inc., the alcohol delivery company in West Hollywood California.
+        </p>
       </div>
     </header>
     <main role="main">
-    <!-- // Work Experience -->
-    <div class="work-exp-wrap" id="work-experience">
-      <section class="work-exp-wrap">
-        <h2 style="margin-top: 0">Work Experience</h2>
+      <!-- // Work Experience -->
+      <div class="work-exp-wrap" id="work-experience">
+        <section class="work-exp-wrap container sides-auto">
+          <h2 style="margin-top: 0">Work Experience</h2>
           <!-- Job Details: copy this whole block to add more jobs -->
           <div class="jobs">
             <div class="job">
               <h3>Software Engineer</h3>
               <p style="margin-top: 0">
-                <a href="https://www.saucey.com" target="_blank" class="work-name">
-                  <strong>Saucey Inc.</strong>
-                </a>&nbsp;&vert;&nbsp;
-                <span class="date-range">Mar&nbsp;2020&nbsp;&dash;&nbsp;Present</span>&nbsp;
+                <a
+                  href="https://www.saucey.com"
+                  target="_blank"
+                  class="work-name"
+                >
+                  <strong>Saucey Inc.</strong> </a
+                >&nbsp;&vert;&nbsp;
+                <span class="date-range"
+                  >Mar&nbsp;2020&nbsp;&dash;&nbsp;Present</span
+                >&nbsp;
               </p>
               <!-- Add as many paragraphs as you need. -->
-              <p style="margin-top: 0">Responsible for implementing new features from design and fix various bugs. Technologies used: ReactJS, JSX, SASS, CSS, Redux, git, misc. third-party libraries.</p>
-          </div>
+              <p style="margin-top: 0">
+                Responsible for implementing new features from design and fix
+                various bugs. Technologies used: ReactJS, JSX, SASS, CSS, Redux,
+                git, misc. third-party libraries.
+              </p>
+            </div>
 
             <div class="job">
               <h3>Quality Assurance Specialist</h3>
               <p style="margin-top: 0">
-                <a href="https://www.saucey.com" target="_blank" class="work-name">
-                  <strong>Saucey Inc.</strong>
-                </a>&nbsp;&vert;&nbsp;
-                <span class="date-range">Feb&nbsp;2019&nbsp;&dash;&nbsp;Mar&nbsp;2020</span>&nbsp;
+                <a
+                  href="https://www.saucey.com"
+                  target="_blank"
+                  class="work-name"
+                >
+                  <strong>Saucey Inc.</strong> </a
+                >&nbsp;&vert;&nbsp;
+                <span class="date-range"
+                  >Feb&nbsp;2019&nbsp;&dash;&nbsp;Mar&nbsp;2020</span
+                >&nbsp;
               </p>
               <!-- Add as many paragraphs as you need. -->
-              <p style="margin-top: 0">Provide test coverage – both manual and automated – around all software products offered by Saucey using Appium. Appium leverages native testing frameworks and superset of Selenium WebDriver. Perform regression, user, acceptance and smoke testing prior to releasing new software to the market Maintain bug database and test suites as functionality of software systems expand.</p>
-          </div>
-          
-          <div class="job">
-            <h3>UX/UI Designer</h3>
-            <p style="margin-top: 0">
-              <a href="http://www.nationalcarrierexchange.com" target="new" class="work-name">
-                <strong>National Produce Exchange</strong>
-              </a>&nbsp;&vert;&nbsp;<span class="date-range">Nov 2014&dash;Mar&nbsp;2015</span>
-            </p>
-            <p>Designed initial UI and established User Experience based on business requirements. Worked closely with developers. establishing identity and brand.</p>
-          </div>
-          
-          <div class="job">
-            <h3>Scrum Master</h3>
-            <p style="margin-top: 0">
-              <a href="http://www.textplus.com" target="new" class="work-name">
-                <strong>TextPlus Inc.</strong>
-              </a>&nbsp;&vert;&nbsp;
-              <span class="date-range">Sep&nbsp;2011&nbsp;&dash;&nbsp;Jun&nbsp;2014</span>
-            </p>
-            <p>Managed team's cadence and workflow throughout sprints. Led team Scrum rituals</p>
-           </div>
-          </div>
-      </section>
-    </div>
-        <!-- end of Job Details block. -->
+              <p style="margin-top: 0">
+                Provide test coverage – both manual and automated – around all
+                software products offered by Saucey using Appium. Appium
+                leverages native testing frameworks and superset of Selenium
+                WebDriver. Perform regression, user, acceptance and smoke
+                testing prior to releasing new software to the market Maintain
+                bug database and test suites as functionality of software
+                systems expand.
+              </p>
+            </div>
 
-        <!-- // Education -->
-        <div class="education" id="education">
-            <div class="education-alpha">
-              <section>
-              <div>
-                  <h2>Education</h2>
-              </div>
-        <div class="csun education-item-container">
-            <table>
-                <tr>
-                    <td>
-                    <a href="https://www.csun.edu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/CSUNS.svg/1200px-CSUNS.svg.png" loading="lazy" style="width: 52px; height: auto;" class="school-logo"></a>
-                    </td>
-                    <td>
-                    <h3><a href="http://www.csun.edu" target="_blank" class="school-name">California State University Northridge&nbsp;</a>&vert;&nbsp;2017&dash;&nbsp;2020</h3>
-                    <p class="degree">Bachelor's of Science &dash; Computer Science</p>
-                    </td>
-                </tr>
-            </table>
-            <p class="school-desc">Completed core upper-division Computer Science classes. Advanced Computer Architecture, Discrete Structures, Software Engineering. Additionally, completed both Physics (Classical Mechanics + Electricity & Magenetism), Linear Algebra</p>
-        </div>
-        
-        <div class="pierce-wrapper education-item-container">
-          <table>
-            <tr>
-              <div class="pierce">
-                <td><a href="https://www.piercecollege.edu" target="_blank"><img src="https://static.wixstatic.com/media/e28e75_eaf3989d148040e1ba2fc01089e773c7.gif" loading="lazy" style="width: 52px; height: auto;" class="school-logo"></a>
-                </td>
-                <td>
-                  <h3><a href="https://www.piercecollege.edu" target="_blank" class="school-name">Los Angeles Pierce College</a>&nbsp;&vert;&nbsp;2015&dash;2017</h3>
-                  <p class="degree">Associate of Arts &dash; concentration in Science, Technology, Engineering & Math</p>
-                </td>
-              </div>
-            </tr>
-          </table>  
-          <p class="school-desc">Completed all lower division general education classes and the following computer science classes. C++, Object Oriented C++, Java, Data Structures, Advanced Data Structures, Computer Architecture (Assembly Language), C</p>
-        </div>
-        <div class="lacc-wrapper">
-            <table>
-                <tr>
-                <td><a href="https://www.lacitycollege.edu" target="_blank"><img src="https://www.lacitycollege.edu/LACC/media/laccMedia/LACC_logo.png" loading="lazy" style="width: 52px; height: auto;" class="school-logo"></a>
-                </td>
-                <td>
-                    <h3><a href="https://www.lacitycollege.edu" target="_blank" class="school-name">Los Angeles City College</a>&nbsp;&vert;&nbsp;2011&nbsp;&dash;&nbsp;2015</h3>
-                </td>
-                </tr>
-            </table>
-            <p class="school-desc" style="padding-bottom: 40px; margin-bottom: 0;">Completed several lower division general education classes</p>
-        </div>
-    </section>
-        </div>
-    </div>
+            <div class="job">
+              <h3>UX/UI Designer</h3>
+              <p style="margin-top: 0">
+                <a
+                  href="http://www.nationalcarrierexchange.com"
+                  target="new"
+                  class="work-name"
+                >
+                  <strong>National Produce Exchange</strong> </a
+                >&nbsp;&vert;&nbsp;<span class="date-range"
+                  >Nov 2014&dash;Mar&nbsp;2015</span
+                >
+              </p>
+              <p>
+                Designed initial UI and established User Experience based on
+                business requirements. Worked closely with developers.
+                establishing identity and brand.
+              </p>
+            </div>
 
-    <div class="education-mobile" id="education">
-      <div class="education-mobile-alpha">
-          <section style="padding: 40px 0;">
-            <h2 style="text-align: center; padding-bottom: 10px; margin-top: 0;">Education</h2>
-              <div class="csun" style="text-align: center;">
-                  <a href="https://www.csun.edu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/CSUNS.svg/1200px-CSUNS.svg.png" style="width: 70px; height: auto;" loading="lazy" class="school-logo-mobile"></a>
-                  <h3><a href="http://www.csun.edu" target="_blank" class="school-name">California State University Northridge</a> | 2017 &dash; 2020</h3>
-                  <p class="degree">Bachelor's of Science &dash; Computer Science</p>
-                  <p class="school-desc">Completed core upper-division Computer Science classes. Advanced Computer Architecture, Discrete Structures, Software Engineering. Additionally, completed both Physics (Classical Mechanics + Electricity & Magenetism), Linear Algebra</p>
-              </div>
-              <div class="pierce" style="text-align: center; padding-top: 40px">
-                  <a href="https://www.piercecollege.edu" target="_blank"><img src="https://static.wixstatic.com/media/e28e75_eaf3989d148040e1ba2fc01089e773c7.gif" loading="lazy" style="width: 70px; height: auto;" class="school-logo-mobile"></a>
-                  <h3><a href="https://www.piercecollege.edu" target="_blank" class="school-name">Los Angeles Pierce College</a> | 2015 &dash; 2017</h3>
-                  <p class="degree">Associate of Arts &dash; concentration in Science, Technology, Engineering & Math</p>
-                  <p class="school-desc">Completed all lower division general education classes and the following computer science classes. C++, Object Oriented C++, Java, Data Structures, Advanced Data Structures, Computer Architecture (Assembly Language), C</p>
-              </div>
-              <div class="lacc" style="text-align: center; padding-top: 40px">
-                  <a href="https://www.lacitycollege.edu" target="_blank"><img src="https://www.lacitycollege.edu/LACC/media/laccMedia/LACC_logo.png" loading="lazy" style="height: 70px; width: auto;" class="school-logo-mobile"></a>
-                  <h3><a href="https://www.lacitycollege.edu" target="_blank" class="school-name">Los Angeles City College</a> | 2011 &dash; 2015</h3></h3>
-                  <p class="school-desc" style="padding-top: 10px;">Complied with IGETC path and completed several lower division general education classes</p>
-              </div>
-          </section>
-      </div>
-    </div>
-      <!-- End of school details. -->
-      <!-- // Footer & contact info -->
-      <div class="footer" style="background: rgb(0,131,178);">
-        <section>
-          <footer>
-              <h4>Let's Keep in Touch!</h4>
-              <!-- Social media and contact links. Add or remove any networks. -->
-                  <ul class="footer-links contact-info" style="margin-top: 0">
-                      <a href="mailto:ryan@ryanancheta.com?subject=Hey! I found you from your website!" style="padding-left: 0;"><i class="fas fa-envelope"></i></a>
-                      <a href="http://www.ryanancheta.com" target="_blank"><i size="med" class="fas fa-columns"></i></a>
-                      <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                      <a href="https://www.linkedin.com/in/ryan-ancheta-920494163" target="_blank"><i class="fab fa-linkedin"></i></a>
-                      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                  </ul>
-              <p>Copyright 2019 by Ryan Ancheta</p>
-          </footer>
-          <div class="back-to-top">
-            <a href="#" style="font-size: 1.4em; color: rgba(255,255,255,0.6); text-decoration: none;">&uarr;</a>
+            <div class="job">
+              <h3>Scrum Master</h3>
+              <p style="margin-top: 0">
+                <a
+                  href="http://www.textplus.com"
+                  target="new"
+                  class="work-name"
+                >
+                  <strong>TextPlus Inc.</strong> </a
+                >&nbsp;&vert;&nbsp;
+                <span class="date-range"
+                  >Sep&nbsp;2011&nbsp;&dash;&nbsp;Jun&nbsp;2014</span
+                >
+              </p>
+              <p>
+                Managed team's cadence and workflow throughout sprints. Led team
+                Scrum rituals
+              </p>
+            </div>
           </div>
         </section>
       </div>
-    </section>
-    
-    </section>
-  </main>
-</body>
+      <!-- end of Job Details block. -->
+
+      <!-- // Education -->
+      <div class="education" id="education">
+        <div class="education-alpha">
+          <section class="container sides-auto">
+            <div>
+              <h2>Education</h2>
+            </div>
+            <div class="csun education-item-container">
+              <table>
+                <tr>
+                  <td>
+                    <a href="https://www.csun.edu" target="_blank"
+                      ><img
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/CSUNS.svg/1200px-CSUNS.svg.png"
+                        loading="lazy"
+                        style="width: 52px; height: auto"
+                        class="school-logo"
+                    /></a>
+                  </td>
+                  <td>
+                    <h3>
+                      <a
+                        href="http://www.csun.edu"
+                        target="_blank"
+                        class="school-name"
+                        >California State University Northridge&nbsp;</a
+                      >&vert;&nbsp;2017&dash;&nbsp;2020
+                    </h3>
+                    <p class="degree">
+                      Bachelor's of Science &dash; Computer Science
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <p class="school-desc">
+                Completed core upper-division Computer Science classes. Advanced
+                Computer Architecture, Discrete Structures, Software
+                Engineering. Additionally, completed both Physics (Classical
+                Mechanics + Electricity & Magenetism), Linear Algebra
+              </p>
+            </div>
+
+            <div class="pierce-wrapper education-item-container">
+              <table>
+                <tr>
+                  <div class="pierce">
+                    <td>
+                      <a href="https://www.piercecollege.edu" target="_blank"
+                        ><img
+                          src="https://static.wixstatic.com/media/e28e75_eaf3989d148040e1ba2fc01089e773c7.gif"
+                          loading="lazy"
+                          style="width: 52px; height: auto"
+                          class="school-logo"
+                      /></a>
+                    </td>
+                    <td>
+                      <h3>
+                        <a
+                          href="https://www.piercecollege.edu"
+                          target="_blank"
+                          class="school-name"
+                          >Los Angeles Pierce College</a
+                        >&nbsp;&vert;&nbsp;2015&dash;2017
+                      </h3>
+                      <p class="degree">
+                        Associate of Arts &dash; concentration in Science,
+                        Technology, Engineering & Math
+                      </p>
+                    </td>
+                  </div>
+                </tr>
+              </table>
+              <p class="school-desc">
+                Completed all lower division general education classes and the
+                following computer science classes. C++, Object Oriented C++,
+                Java, Data Structures, Advanced Data Structures, Computer
+                Architecture (Assembly Language), C
+              </p>
+            </div>
+            <div class="lacc-wrapper">
+              <table>
+                <tr>
+                  <td>
+                    <a href="https://www.lacitycollege.edu" target="_blank"
+                      ><img
+                        src="https://www.lacitycollege.edu/LACC/media/laccMedia/LACC_logo.png"
+                        loading="lazy"
+                        style="width: 52px; height: auto"
+                        class="school-logo"
+                    /></a>
+                  </td>
+                  <td>
+                    <h3>
+                      <a
+                        href="https://www.lacitycollege.edu"
+                        target="_blank"
+                        class="school-name"
+                        >Los Angeles City College</a
+                      >&nbsp;&vert;&nbsp;2011&nbsp;&dash;&nbsp;2015
+                    </h3>
+                  </td>
+                </tr>
+              </table>
+              <p
+                class="school-desc"
+                style="padding-bottom: 40px; margin-bottom: 0"
+              >
+                Completed several lower division general education classes
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="education-mobile" id="education">
+        <div class="education-mobile-alpha">
+          <section style="padding: 40px 0">
+            <h2 style="text-align: center; padding-bottom: 10px; margin-top: 0">
+              Education
+            </h2>
+            <div class="csun" style="text-align: center">
+              <a href="https://www.csun.edu" target="_blank"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/CSUNS.svg/1200px-CSUNS.svg.png"
+                  style="width: 70px; height: auto"
+                  loading="lazy"
+                  class="school-logo-mobile"
+              /></a>
+              <h3>
+                <a
+                  href="http://www.csun.edu"
+                  target="_blank"
+                  class="school-name"
+                  >California State University Northridge</a
+                >
+                | 2017 &dash; 2020
+              </h3>
+              <p class="degree">
+                Bachelor's of Science &dash; Computer Science
+              </p>
+              <p class="school-desc">
+                Completed core upper-division Computer Science classes. Advanced
+                Computer Architecture, Discrete Structures, Software
+                Engineering. Additionally, completed both Physics (Classical
+                Mechanics + Electricity & Magenetism), Linear Algebra
+              </p>
+            </div>
+            <div class="pierce" style="text-align: center; padding-top: 40px">
+              <a href="https://www.piercecollege.edu" target="_blank"
+                ><img
+                  src="https://static.wixstatic.com/media/e28e75_eaf3989d148040e1ba2fc01089e773c7.gif"
+                  loading="lazy"
+                  style="width: 70px; height: auto"
+                  class="school-logo-mobile"
+              /></a>
+              <h3>
+                <a
+                  href="https://www.piercecollege.edu"
+                  target="_blank"
+                  class="school-name"
+                  >Los Angeles Pierce College</a
+                >
+                | 2015 &dash; 2017
+              </h3>
+              <p class="degree">
+                Associate of Arts &dash; concentration in Science, Technology,
+                Engineering & Math
+              </p>
+              <p class="school-desc">
+                Completed all lower division general education classes and the
+                following computer science classes. C++, Object Oriented C++,
+                Java, Data Structures, Advanced Data Structures, Computer
+                Architecture (Assembly Language), C
+              </p>
+            </div>
+            <div class="lacc" style="text-align: center; padding-top: 40px">
+              <a href="https://www.lacitycollege.edu" target="_blank"
+                ><img
+                  src="https://www.lacitycollege.edu/LACC/media/laccMedia/LACC_logo.png"
+                  loading="lazy"
+                  style="height: 70px; width: auto"
+                  class="school-logo-mobile"
+              /></a>
+              <h3>
+                <a
+                  href="https://www.lacitycollege.edu"
+                  target="_blank"
+                  class="school-name"
+                  >Los Angeles City College</a
+                >
+                | 2011 &dash; 2015
+              </h3>
+              <p class="school-desc" style="padding-top: 10px">
+                Complied with IGETC path and completed several lower division
+                general education classes
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- End of school details. -->
+      <!-- // Footer & contact info -->
+      <div class="footer" style="background: rgb(0, 131, 178)">
+        <section class="container sides-auto">
+          <footer>
+            <h4>Let's Keep in Touch!</h4>
+            <!-- Social media and contact links. Add or remove any networks. -->
+            <ul class="footer-links contact-info" style="margin-top: 0">
+              <a
+                href="mailto:ryan@ryanancheta.com?subject=Hey! I found you from your website!"
+                style="padding-left: 0"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a href="http://www.ryanancheta.com" target="_blank"
+                ><i size="med" class="fas fa-columns"></i
+              ></a>
+              <a href="http://www.twitter.com" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ryan-ancheta-920494163"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </ul>
+            <p>Copyright 2019 by Ryan Ancheta</p>
+          </footer>
+          <div class="back-to-top">
+            <a
+              href="#"
+              style="
+                font-size: 1.4em;
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+              "
+              >&uarr;</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
