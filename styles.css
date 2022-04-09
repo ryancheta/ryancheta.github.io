@@ -287,6 +287,7 @@ ul.footer-links.contact-info {
   flex-basis: fit-content;
   letter-spacing: 0.2vh;
   color: var(--myBlue);
+  white-space: nowrap;
   text-transform: uppercase;
   text-align: center;
   font-size: 0.8em;
