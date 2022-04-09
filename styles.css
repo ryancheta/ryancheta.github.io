@@ -37,8 +37,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Roboto Slab", serif;
-  letter-spacing: 0.08em;
+  /* font-family: "Roboto Slab", serif; */
+  font-family: "Helvetica", "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 h2 {
