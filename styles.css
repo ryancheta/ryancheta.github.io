@@ -17,11 +17,17 @@ body {
   font-family: "Helvetica", "Roboto", sans-serif;
   /* font-family: 'Noto Sans', sans-serif; */
   margin: 0;
+  color: #2b2b2b;
   /* margin-top: 28px; */
   padding: 0;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: smooth;
   background: rgba(0, 0, 0, 0.02);
+}
+
+a,
+a:active {
+  color: #2b2b2b;
 }
 
 h2#header-name.header-text-content {
@@ -53,7 +59,7 @@ h3,
 h3 > .school-name,
 .work-name {
   margin: 0 auto;
-  color: var(--myBlue);
+  /* color: var(--myBlue); */
   border-bottom: none;
   padding-bottom: 0;
   -webkit-transition: border-bottom 0.25s ease, padding-bottom 0.5ms ease;
@@ -61,14 +67,13 @@ h3 > .school-name,
 }
 
 .date-range {
-  font-weight: 700;
+  font-weight: 500;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .work-name:hover,
 .school-name:hover {
-  border-bottom: 1px solid var(--myBlue);
-  padding-bottom: 1.5px;
+  text-decoration: underline;
 }
 
 hr {
@@ -126,6 +131,7 @@ section p {
 .school-name,
 .work-name {
   text-decoration: none;
+  font-weight: 500;
 }
 
 .school-logo {
