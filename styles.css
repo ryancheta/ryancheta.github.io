@@ -14,7 +14,7 @@ rgb(255,131,0); */
 html,
 body {
   overflow-x: hidden;
-  font-family: "Helvetica", "Roboto", sans-serif;
+  font-family: 'Helvetica', 'Roboto', sans-serif;
   /* font-family: 'Noto Sans', sans-serif; */
   margin: 0;
   color: #2b2b2b;
@@ -44,7 +44,7 @@ h3,
 h4,
 h5 {
   /* font-family: "Roboto Slab", serif; */
-  font-family: "Helvetica", "Roboto", sans-serif;
+  font-family: 'Helvetica', 'Roboto', sans-serif;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
@@ -149,24 +149,20 @@ section p {
 .education {
   /* background: url('https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fnumber-education-classroom-brand-font-school-1201352-pxhere.com.jpg?1552437216395') top right; */
   /* background: url('/assets/img-studying-flat.jpg'); */
-  background: url("/assets/img-typing-on-laptop.jpg") center;
+  background: url('/assets/img-typing-on-laptop.jpg') center;
   background-attachment: scroll;
   background-size: cover;
 }
 
 .education-alpha {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.35)
-  );
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.35));
 
   padding: 40px 0;
 }
 
 .education-mobile {
   display: none;
-  background: url("/assets/img-typing-on-laptop.jpg") center right;
+  background: url('/assets/img-typing-on-laptop.jpg') center right;
   background-attachment: scroll;
   background-size: cover;
 }
@@ -266,20 +262,29 @@ ul.footer-links.contact-info {
 /* Footer END */
 
 .nav-container {
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100vw;
-  background: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 10;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #nav {
   top: 0;
   transition: top 0.6s;
   display: inline-flex;
+}
+
+.nav-container-container {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  background: white;
+  width: 100vw;
+  height: auto;
+  z-index: 10;
 }
 
 #nav {
@@ -304,12 +309,14 @@ ul.footer-links.contact-info {
   background: transparent;
   transition: all 0.4s ease;
   font-weight: 400;
+  cursor: pointer;
 }
 
-.nav a:hover {
-  color: white;
-  background: var(--myBlue);
-  cursor: pointer;
+@media (hover: hover) {
+  .nav a:hover {
+    color: white;
+    background: var(--myBlue);
+  }
 }
 
 /* Work Experience
