@@ -270,6 +270,13 @@ ul.footer-links.contact-info {
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
+  width: auto;
+}
+
+@media (min-width: 721px) {
+  .nav-container {
+    width: 80%;
+  }
 }
 
 #nav {
