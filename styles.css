@@ -9,6 +9,7 @@ rgb(255,131,0); */
   --myBlue: rgb(0, 131, 178);
   --myOrange: rgb(178, 92, 0);
   --max-width: 1360px;
+  font-size: 1.125rem;
 }
 
 html,
@@ -311,7 +312,7 @@ ul.footer-links.contact-info {
   text-transform: uppercase;
   text-align: center;
   font-size: 0.8em;
-  padding: 20px 18px;
+  padding: 20px 12px;
   text-decoration: none;
   background: transparent;
   transition: all 0.4s ease;
