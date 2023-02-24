@@ -4,10 +4,13 @@ rgb(26,195,255);
 rgb(0,188,255);
 rgb(178,92,0);
 rgb(255,131,0); */
-
+p {
+  margin: 0;
+  padding: 0;
+}
 :root {
-  --myBlue: rgb(0, 131, 178);
-  --myOrange: rgb(178, 92, 0);
+  --myBlue: #2f5d8c;
+  --myOrange: #d55e2d;
   --max-width: 1360px;
   font-size: 1.125rem;
 }
@@ -69,7 +72,6 @@ h3 > .school-name,
 
 .date-range {
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 .work-name:hover,
@@ -180,7 +182,7 @@ section p {
 .footer {
   margin: 0 auto;
   padding: 40px 0;
-  background: rgb(0, 131, 178);
+  background: var(--myBlue);
 }
 
 ul {
@@ -224,7 +226,7 @@ ul.footer-links.contact-info {
   transition: all 0.45s ease;
 }
 .fas.fa-envelope:hover {
-  color: rgb(178, 92, 0);
+  color: var(--myOrange);
   transform: scale(2);
 }
 .fab.fa-twitter {
@@ -374,6 +376,14 @@ ul.footer-links.contact-info {
 .job {
   padding: 0.5em 0;
 }
+
+.job .heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+}
+
 .header-description {
   line-height: 1.5 !important;
 }
@@ -385,4 +395,29 @@ ul.footer-links.contact-info {
 
 .container {
   max-width: var(--max-width);
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-container,
+  .nav-container-container,
+  #nav,
+  nav,
+  html,
+  body {
+    background-color: #2b2b2b;
+    color: whitesmoke;
+  }
+  .nav a,
+  a,
+  h1,
+  h3,
+  h4,
+  h5 {
+    color: whitesmoke;
+  }
+
+  .education-alpha,
+  .education-mobile-alpha {
+    background: linear-gradient(to right, rgba(38, 38, 38, 0.7), rgba(3, 0, 0, 0.35));
+  }
 }
