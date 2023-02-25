@@ -15,6 +15,15 @@ p {
   font-size: 1.125rem;
 }
 
+@media (max-width: 425px) {
+  :root {
+    font-size: 16px;
+  }
+  .job .heading {
+    justify-content: center;
+  }
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -26,7 +35,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: smooth;
-  background: rgba(0, 0, 0, 0.02);
+  background-color: #f4f4f4;
 }
 
 a,
@@ -291,7 +300,8 @@ ul.footer-links.contact-info {
 .nav-container-container {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
-  background: white;
+  /* background: white; */
+  background-color: #f4f4f4;
   width: 100vw;
   height: auto;
   z-index: 10;
@@ -301,7 +311,7 @@ ul.footer-links.contact-info {
   z-index: 100;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.01);
-  background-color: white;
+  background-color: inherit;
   opacity: 0.9;
 }
 
@@ -316,7 +326,6 @@ ul.footer-links.contact-info {
   font-size: 0.8em;
   padding: 20px 12px;
   text-decoration: none;
-  background: transparent;
   transition: all 0.4s ease;
   font-weight: 400;
   cursor: pointer;
@@ -378,6 +387,7 @@ ul.footer-links.contact-info {
 }
 
 .job .heading {
+  white-space: nowrap;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
