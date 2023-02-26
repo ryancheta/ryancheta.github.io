@@ -16,14 +16,6 @@
     <!-- links -->
 
     <title>Ryan Ancheta | Resume</title>
-    <script>
-      function scrollToEducation() {
-        const MAX_MOBILE_WIDTH = 425;
-        let width = window.innerWidth;
-        let element = document.querySelector(width < MAX_MOBILE_WIDTH ? '.education-mobile' : '.education');
-        element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-      }
-    </script>
   </head>
   <body>
     <div class="nav-container-container">
@@ -31,7 +23,7 @@
         <nav class="nav container sides-auto" id="nav">
           <a href="#">home</a>
           <a href="#work-experience">work experience</a>
-          <a onclick="scrollToEducation()">education</a>
+          <a href="#education">education</a>
         </nav>
       </div>
     </div>
@@ -69,7 +61,7 @@
               <h3>Software Engineer</h3>
               <div class="heading">
                 <p><a href="https://www.saucey.com" target="_blank" class="work-name"> Saucey Inc.</a>&nbsp;•&nbsp;</p>
-                <p class="date-range">Mar&nbsp;2020&nbsp;&dash;&nbsp;Present</p>
+                <p class="date-range">03/2020&nbsp;–&nbsp;Present</p>
                 <!-- Add as many paragraphs as you need. -->
               </div>
               <p>Responsible for implementing new features from design and fix various bugs. Technologies used: ReactJS, JSX, SASS, CSS, Redux, git, misc. third-party libraries.</p>
@@ -79,7 +71,7 @@
               <h3>Quality Assurance Specialist</h3>
               <div class="heading">
                 <p><a href="https://www.saucey.com" target="_blank" class="work-name"> Saucey Inc.</a>&nbsp;•&nbsp;</p>
-                <div class="date-range">Feb&nbsp;2019&nbsp;&dash;&nbsp;Mar&nbsp;2020</div>
+                <div class="date-range">02/2019&nbsp;–&nbsp;03/2020</div>
               </div>
               <!-- Add as many paragraphs as you need. -->
               <p>Provide test coverage – both manual and automated – around all software products offered by Saucey using Appium. Appium leverages native testing frameworks and superset of Selenium WebDriver. Perform regression, user, acceptance and smoke testing prior to releasing new software to the market Maintain bug database and test suites as functionality of software systems expand.</p>
@@ -89,7 +81,7 @@
               <h3>UX/UI Designer</h3>
               <div class="heading">
                 <p><a href="https://www.nationalcarrierexchange.com" target="__blank" class="work-name"> National Produce Exchange</a>&nbsp;•&nbsp;</p>
-                <div class="date-range">Nov 2014&dash;Mar&nbsp;2015</div>
+                <div class="date-range">11/2014 – Mar 2015</div>
               </div>
               <p>Designed initial UI and established User Experience based on business requirements. Worked closely with developers. establishing identity and brand.</p>
             </div>
@@ -98,7 +90,7 @@
               <h3>Scrum Master</h3>
               <div class="heading">
                 <p><a href="http://www.textplus.com" target="new" class="work-name"> TextPlus Inc.</a>&nbsp;•&nbsp;</p>
-                <span class="date-range">Sep&nbsp;2011&nbsp;&dash;&nbsp;Jun&nbsp;2014</span>
+                <span class="date-range">09/2011&nbsp;–&nbsp;06/2014</span>
               </div>
               <p>Managed team's cadence and workflow throughout sprints. Led team Scrum rituals</p>
             </div>
@@ -108,90 +100,45 @@
       <!-- end of Job Details block. -->
 
       <!-- // Education -->
-      <div class="education">
+      <div class="education" id="education">
         <div class="education-alpha">
           <section class="container sides-auto">
             <div>
               <h2>Education</h2>
             </div>
-            <div class="csun education-item-container">
-              <table>
-                <tr>
-                  <td>
-                    <a href="https://www.csun.edu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/CSUNS.svg/1200px-CSUNS.svg.png" loading="lazy" style="width: 52px; height: auto" class="school-logo" /></a>
-                  </td>
-                  <td>
-                    <h3><a href="http://www.csun.edu" target="_blank" class="school-name">California State University Northridge&nbsp;</a>•&nbsp;2017&dash;&nbsp;2020</h3>
-                    <p class="degree">Bachelor of Science &dash; Computer Science</p>
-                  </td>
-                </tr>
-              </table>
+
+            <div class="education-item-container">
+              <div class="education-item">
+                <a href="https://www.csun.edu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/CSUNS.svg/1200px-CSUNS.svg.png" loading="lazy" style="width: 52px; height: auto" class="school-logo" /></a>
+                <div>
+                  <h3><a href="http://www.csun.edu" target="_blank" class="school-name">California State University Northridge&nbsp;</a>•&nbsp;2017 – &nbsp;2020</h3>
+                  <p class="degree">Bachelor of Science &dash; Computer Science</p>
+                </div>
+              </div>
               <p class="school-desc">Completed core upper-division Computer Science classes. Advanced Computer Architecture, Discrete Structures, Software Engineering. Additionally, completed both Physics (Classical Mechanics + Electricity & Magenetism), Linear Algebra</p>
             </div>
 
-            <div class="pierce-wrapper education-item-container">
-              <table>
-                <tr>
-                  <div class="pierce">
-                    <td>
-                      <a href="https://www.piercecollege.edu" target="_blank"><img src="https://static.wixstatic.com/media/e28e75_eaf3989d148040e1ba2fc01089e773c7.gif" loading="lazy" style="width: 52px; height: auto" class="school-logo" /></a>
-                    </td>
-                    <td>
-                      <h3><a href="https://www.piercecollege.edu" target="_blank" class="school-name">Los Angeles Pierce College</a>&nbsp;•&nbsp;2015&dash;2017</h3>
-                      <p class="degree">Associate of Arts &dash; concentration in Science, Technology, Engineering & Math</p>
-                    </td>
-                  </div>
-                </tr>
-              </table>
+            <div class="education-item-container">
+              <div class="education-item">
+                <a href="https://www.piercecollege.edu" target="_blank"><img src="https://static.wixstatic.com/media/e28e75_eaf3989d148040e1ba2fc01089e773c7.gif" loading="lazy" style="width: 52px; height: auto" class="school-logo" /></a>
+                <div>
+                  <h3><a href="https://www.piercecollege.edu" target="_blank" class="school-name">Los Angeles Pierce College</a>&nbsp;•&nbsp;2015 – 2017</h3>
+                  <p class="degree">Associate of Arts &dash; concentration in Science, Technology, Engineering & Math</p>
+                </div>
+              </div>
               <p class="school-desc">Completed all lower division general education classes and the following computer science classes. C++, Object Oriented C++, Java, Data Structures, Advanced Data Structures, Computer Architecture (Assembly Language), C</p>
             </div>
-            <div class="lacc-wrapper">
-              <table>
-                <tr>
-                  <td>
-                    <a href="https://www.lacitycollege.edu" target="_blank">
-                      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Los_Angeles_City_College_seal.svg/800px-Los_Angeles_City_College_seal.svg.png" loading="lazy" style="width: auto; height: 53px" class="school-logo" />
-                    </a>
-                  </td>
-                  <td>
-                    <h3><a href="https://www.lacitycollege.edu" target="_blank" class="school-name">Los Angeles City College</a>&nbsp;•&nbsp;2011&nbsp;&dash;&nbsp;2015</h3>
-                  </td>
-                </tr>
-              </table>
-              <p class="school-desc" style="padding-bottom: 40px; margin-bottom: 0">Completed several lower division general education classes</p>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div class="education-mobile">
-        <div class="education-mobile-alpha">
-          <section style="padding: 40px 0">
-            <h2 style="text-align: center; padding-bottom: 10px; margin-top: 0">Education</h2>
-            <div class="csun" style="text-align: center">
-              <a href="https://www.csun.edu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/CSUNS.svg/1200px-CSUNS.svg.png" style="width: 70px; height: auto" loading="lazy" class="school-logo-mobile" /></a>
-              <h3>
-                <a href="http://www.csun.edu" target="_blank" class="school-name">California State University Northridge</a>
-                | 2017 &dash; 2020
-              </h3>
-              <p class="degree">Bachelor of Science &dash; Computer Science</p>
-              <p class="school-desc">Completed core upper-division Computer Science classes. Advanced Computer Architecture, Discrete Structures, Software Engineering. Additionally, completed both Physics (Classical Mechanics + Electricity & Magenetism), Linear Algebra</p>
-            </div>
-            <div class="pierce" style="text-align: center; padding-top: 40px">
-              <a href="https://www.piercecollege.edu" target="_blank"><img src="https://static.wixstatic.com/media/e28e75_eaf3989d148040e1ba2fc01089e773c7.gif" loading="lazy" style="width: 70px; height: auto" class="school-logo-mobile" /></a>
-              <h3>
-                <a href="https://www.piercecollege.edu" target="_blank" class="school-name">Los Angeles Pierce College</a>
-                | 2015 &dash; 2017
-              </h3>
-              <p class="degree">Associate of Arts &dash; concentration in Science, Technology, Engineering & Math</p>
+
+            <div class="education-item-container">
+              <div class="education-item">
+                <a href="https://www.lacc.edu" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Los_Angeles_City_College_seal.svg/800px-Los_Angeles_City_College_seal.svg.png" loading="lazy" style="width: auto; height: 53px" class="school-logo" />
+                </a>
+                <div>
+                  <h3><a href="https://www.lacitycollege.edu" target="_blank" class="school-name">Los Angeles City College</a>&nbsp;•&nbsp;2011&nbsp;–&nbsp;2015</h3>
+                </div>
+              </div>
               <p class="school-desc">Completed all lower division general education classes and the following computer science classes. C++, Object Oriented C++, Java, Data Structures, Advanced Data Structures, Computer Architecture (Assembly Language), C</p>
-            </div>
-            <div class="lacc" style="text-align: center; padding-top: 40px">
-              <a href="https://www.lacitycollege.edu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Los_Angeles_City_College_seal.svg/800px-Los_Angeles_City_College_seal.svg.png" loading="lazy" style="height: 70px; width: auto" class="school-logo-mobile" /></a>
-              <h3>
-                <a href="https://www.lacitycollege.edu" target="_blank" class="school-name">Los Angeles City College</a>
-                | 2011 &dash; 2015
-              </h3>
-              <p class="school-desc" style="padding-top: 10px">Complied with IGETC path and completed several lower division general education classes</p>
             </div>
           </section>
         </div>

@@ -22,6 +22,10 @@ p {
   .job .heading {
     justify-content: center;
   }
+  #nav a {
+    font-size: 0.625rem;
+    font-weight: bold;
+  }
 }
 
 html,
@@ -41,6 +45,11 @@ body {
 a,
 a:active {
   color: #2b2b2b;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 h2#header-name.header-text-content {
@@ -147,11 +156,11 @@ section p {
 }
 
 .school-logo {
-  padding-right: 8px;
+  /* padding-right: 8px; */
 }
 
 .school-logo-mobile {
-  padding-bottom: 14px;
+  /* padding-bottom: 14px; */
 }
 
 /* Header & Footer
@@ -166,26 +175,32 @@ section p {
   background-size: cover;
 }
 
+.education-item {
+  display: flex;
+  align-items: center;
+}
+
+.education-item .school-logo {
+  margin-right: 0.5rem;
+}
+.education-item > * {
+  margin-bottom: 0.5rem;
+}
+
 .education-alpha {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.35));
 
   padding: 40px 0;
 }
 
-.education-mobile {
-  display: none;
-  background: url('/assets/img-typing-on-laptop.jpg') center right;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-.education-mobile-alpha {
+/* .education-mobile-alpha {
   background: rgba(255, 255, 255, 0.75);
   padding: 40px 0;
-}
+} */
 
 .education-item-container {
   padding: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .footer {
@@ -333,11 +348,21 @@ ul.footer-links.contact-info {
 
 @media (hover: hover) {
   .nav a:hover {
+    color: var(--myOrange);
+  }
+}
+@media (hover: hover) and (prefers-color-scheme: dark) {
+  .nav a:hover {
     color: white;
-    background: var(--myBlue);
+    /* background: var(--myBlue); */
   }
 }
 
+@media (hover: hover) and (not(prefers-color-scheme: dark)) {
+  .nav a:hover {
+    color: var(--myOrange);
+  }
+}
 /* Work Experience
   ------------------------------------*/
 .degree {
@@ -347,8 +372,22 @@ ul.footer-links.contact-info {
 }
 
 @media (max-width: 768px) {
+  .education {
+    text-align: center;
+  }
+
+  .education-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .education-item .school-logo {
+    margin: initial;
+  }
+
   .degree {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 }
 
@@ -372,7 +411,7 @@ ul.footer-links.contact-info {
     margin: 0 auto;
   }
   .education {
-    display: none;
+    /* display: none; */
   }
   .education-mobile {
     display: block;
@@ -384,13 +423,14 @@ ul.footer-links.contact-info {
 
 .job {
   padding: 0.5em 0;
+  margin-bottom: 1rem;
 }
 
 .job .heading {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   margin-top: 0.25rem;
 }
 
@@ -417,7 +457,7 @@ ul.footer-links.contact-info {
     background-color: #2b2b2b;
     color: whitesmoke;
   }
-  .nav a,
+  /* .nav a, */
   a,
   h1,
   h3,
@@ -426,6 +466,9 @@ ul.footer-links.contact-info {
     color: whitesmoke;
   }
 
+  .nav a {
+    color: var(--myOrange);
+  }
   .education-alpha,
   .education-mobile-alpha {
     background: linear-gradient(to bottom, rgba(38, 38, 38, 0.9), rgba(3, 0, 0, 0.5));
