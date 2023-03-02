@@ -4,6 +4,9 @@ rgb(26,195,255);
 rgb(0,188,255);
 rgb(178,92,0);
 rgb(255,131,0); */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
 p {
   margin: 0;
   padding: 0;
@@ -12,12 +15,12 @@ p {
   --myBlue: #2f5d8c;
   --myOrange: #d55e2d;
   --max-width: 1360px;
-  font-size: 1.125rem;
+  font-size: 20px;
 }
 
 @media (max-width: 425px) {
   :root {
-    font-size: 16px;
+    font-size: 18px;
   }
   .job .heading {
     justify-content: center;
@@ -31,8 +34,9 @@ p {
 html,
 body {
   overflow-x: hidden;
-  font-family: "Helvetica", "Roboto", sans-serif;
-  /* font-family: 'Noto Sans', sans-serif; */
+  font-family: system-ui, -apple-system, "Helvetica", "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   margin: 0;
   color: #2b2b2b;
   /* margin-top: 28px; */
@@ -52,10 +56,6 @@ h3 {
   padding: 0;
 }
 
-h2#header-name.header-text-content {
-  margin: 0 14px;
-}
-
 .work-exp-wrap {
   padding: 2rem 0;
 }
@@ -66,9 +66,11 @@ h3,
 h4,
 h5 {
   /* font-family: "Roboto Slab", serif; */
-  font-family: "Helvetica", "Roboto", sans-serif;
+  /* font-family: "Helvetica", "Roboto", sans-serif; */
   font-weight: bold;
   letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -96,6 +98,11 @@ h3 > .school-name,
   text-decoration: underline;
 }
 
+h2[class|="header-text"] {
+  color: white;
+  margin-top: 0.5rem;
+}
+
 hr {
   height: 1px;
   background: rgba(178, 92, 0, 0.2);
@@ -107,34 +114,28 @@ hr {
   background: var(--myBlue);
 }
 
-.header-bg {
-  /* border-top: 1px solid white; */
-  width: 80%;
-  height: auto;
-  /* margin: auto 0; */
-  padding: 100px 0 60px;
-  transition: 0.2s;
+.header-content-container {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
 }
 
-.header-bg-mobile {
-  display: none;
-  background: var(--myBlue);
-  text-align: center;
-  padding: 60px 0;
-}
-
-.header-bg h1,
-.header-bg h2,
-.header-bg p {
-  width: 80%;
-  margin: 0 auto;
+.header-content-container > div {
+  flex: 1;
 }
 
 .header-bg img {
-  width: 100%;
-  margin: auto 0;
-  padding-top: 140px;
-  z-index: 1;
+  border-radius: 50%;
+  height: 160px;
+  width: auto;
+  padding: 0;
+  box-shadow: 4px 1px 16px rgba(0, 0, 0, 0.0125);
+  object-fit: cover;
+  filter: saturate(0);
+  margin-right: 1rem;
 }
 
 section {
@@ -156,10 +157,6 @@ section p {
 
 .school-logo {
   /* padding-right: 8px; */
-}
-
-.school-logo-mobile {
-  /* padding-bottom: 14px; */
 }
 
 /* Header & Footer
@@ -209,11 +206,6 @@ section p {
   padding: 40px 0;
 }
 
-/* .education-mobile-alpha {
-  background: rgba(255, 255, 255, 0.75);
-  padding: 40px 0;
-} */
-
 .education-item-container {
   padding: 1rem 0;
   margin-bottom: 1rem;
@@ -223,6 +215,10 @@ section p {
   margin: 0 auto;
   padding: 40px 0;
   background: var(--myBlue);
+}
+
+.footer h4 {
+  margin-bottom: 0.625rem;
 }
 
 ul {
@@ -239,7 +235,6 @@ ul a {
 ul a:visited,
 ul a:link,
 ul a:active {
-  /* color: black; */
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -388,6 +383,11 @@ ul.footer-links.contact-info {
 }
 
 @media (max-width: 768px) {
+  .header-content-container {
+    display: block;
+    text-align: center;
+  }
+
   .education {
     text-align: center;
   }
@@ -418,23 +418,10 @@ ul.footer-links.contact-info {
   margin-top: 0;
 }
 
-@media only screen and (max-width: 720px) {
-  .header-bg {
-    display: none;
-  }
-  .header-bg-mobile {
-    display: block;
-    padding-top: 120px;
-  }
+@media (max-width: 720px) {
   .footer {
     text-align: center;
     margin: 0 auto;
-  }
-  .education {
-    /* display: none; */
-  }
-  .education-mobile {
-    display: block;
   }
   .work-exp-wrap {
     text-align: center;
@@ -455,7 +442,9 @@ ul.footer-links.contact-info {
 }
 
 .header-description {
-  line-height: 1.5 !important;
+  line-height: 1.5;
+  font-weight: lighter;
+  padding-top: 8px;
 }
 
 .sides-auto {
@@ -489,8 +478,7 @@ ul.footer-links.contact-info {
   .nav a {
     color: var(--myOrange);
   }
-  .education-alpha,
-  .education-mobile-alpha {
+  .education-alpha {
     background: linear-gradient(
       to bottom,
       rgba(38, 38, 38, 0.9),

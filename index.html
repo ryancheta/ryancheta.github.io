@@ -9,6 +9,8 @@
       content="Ryan Ancheta Front-End ReactJS developer software engineer software developer"
     />
     <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -48,91 +50,22 @@
     </div>
     <!-- // Intro -->
     <header class="header">
-      <div class="header-bg container sides-auto">
-        <table>
-          <tr>
-            <td>
-              <img
-                src="./assets/avatar.png"
-                loading="lazy"
-                style="
-                  border-radius: 50%;
-                  height: 160px;
-                  width: auto;
-                  padding: 0;
-                  box-shadow: 4px 1px 16px rgba(0, 0, 0, 0.25);
-                  object-fit: cover;
-                  filter: saturate(0);
-                "
-              />
-            </td>
-            <td>
-              <h2
-                style="color: white"
-                id="header-name"
-                class="header-text-content"
-              >
-                Ryan Ancheta
-              </h2>
-              <p style="font-weight: 500; color: white; margin: 0 14px">
-                Software Engineer
-              </p>
-              <p
-                class="header-description"
-                style="
-                  color: white;
-                  font-weight: lighter;
-                  padding-top: 8px;
-                  line-height: 1.2em;
-                  margin: 0 14px;
-                "
-              >
+      <section>
+        <div class="header-bg container sides-auto">
+          <div class="header-content-container">
+            <img src="./assets/avatar.png" loading="lazy" />
+            <div>
+              <h2 id="header-name" class="header-text-content">Ryan Ancheta</h2>
+              <p>Software Engineer</p>
+              <p class="header-description">
                 I am currently working as a full-time ReactJS developer at
                 Saucey Inc., the alcohol delivery company in West Hollywood
                 California.
               </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="header-bg-mobile">
-        <img
-          src="https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fchedda.png?1551856721270https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fchedda.png?1551856721270"
-          loading="lazy"
-          style="
-            border-radius: 50%;
-            height: 160px;
-            width: auto;
-            padding: 0;
-            box-shadow: 4px 1px 16px rgba(0, 0, 0, 0.25);
-          "
-        />
-        <h2 style="color: white; margin-bottom: 0">Ryan Ancheta</h2>
-        <p
-          style="
-            font-weight: 500;
-            color: white;
-            margin: 0 14px;
-            line-height: 1.2em;
-          "
-        >
-          Software Engineer
-        </p>
-        <p
-          class="header-description"
-          style="
-            color: white;
-            font-weight: lighter;
-            padding-top: 8px;
-            line-height: 1.2em;
-            width: 80%;
-            margin: 0 auto;
-          "
-        >
-          I am currently working as a full-time ReactJS developer at Saucey
-          Inc., the alcohol delivery company in West Hollywood California.
-        </p>
-      </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main role="main">
       <!-- // Work Experience -->
@@ -252,9 +185,7 @@
                   />
                 </a>
                 <div>
-                  <h3 class="degree">
-                    Bachelor of Science &dash; Computer Science
-                  </h3>
+                  <h3 class="degree">B.S. &dash; Computer Science</h3>
                   <div class="school-name-year-detail">
                     <a
                       href="http://www.csun.edu"
@@ -286,8 +217,8 @@
                 </a>
                 <div>
                   <h3 class="degree">
-                    Associate of Arts &dash; concentration in Science,
-                    Technology, Engineering & Math
+                    A.A. &dash; concentration in Science, Technology,
+                    Engineering & Math
                   </h3>
                   <div class="school-name-year-detail">
                     <a
