@@ -1,11 +1,4 @@
-/* Color Palette
-rgb(0,131,178);
-rgb(26,195,255);
-rgb(0,188,255);
-rgb(178,92,0);
-rgb(255,131,0); */
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 p {
   margin: 0;
@@ -15,12 +8,12 @@ p {
   --myBlue: #2f5d8c;
   --myOrange: #d55e2d;
   --max-width: 1360px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 425px) {
   :root {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .job .heading {
     justify-content: center;
@@ -34,8 +27,8 @@ p {
 html,
 body {
   overflow-x: hidden;
-  font-family: system-ui, -apple-system, "Helvetica", "Roboto", sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: system-ui, -apple-system, 'Helvetica', 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin: 0;
   color: #2b2b2b;
@@ -82,7 +75,6 @@ h2 {
 h3 > .school-name,
 .work-name {
   margin: 0 auto;
-  /* color: var(--myBlue); */
   border-bottom: none;
   padding-bottom: 0;
   -webkit-transition: border-bottom 0.25s ease, padding-bottom 0.5ms ease;
@@ -98,7 +90,7 @@ h3 > .school-name,
   text-decoration: underline;
 }
 
-h2[class|="header-text"] {
+h2[class|='header-text'] {
   color: white;
   margin-top: 0.5rem;
 }
@@ -164,9 +156,7 @@ section p {
 /* Footer START */
 
 .education {
-  /* background: url('https://cdn.glitch.com/bf27959f-3e99-4155-89b1-964a21f4a2be%2Fnumber-education-classroom-brand-font-school-1201352-pxhere.com.jpg?1552437216395') top right; */
-  /* background: url('/assets/img-studying-flat.jpg'); */
-  background: url("/assets/img-typing-on-laptop.jpg") center;
+  background: url('/assets/img-typing-on-laptop.jpg') center;
   background-attachment: scroll;
   background-size: cover;
 }
@@ -197,12 +187,7 @@ section p {
 }
 
 .education-alpha {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.35)
-  );
-
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.65));
   padding: 40px 0;
 }
 
@@ -219,6 +204,12 @@ section p {
 
 .footer h4 {
   margin-bottom: 0.625rem;
+}
+
+.back-to-top a {
+  font-size: 1.4em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 ul {
@@ -326,7 +317,6 @@ ul.footer-links.contact-info {
 .nav-container-container {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
-  /* background: white; */
   background-color: #f4f4f4;
   width: 100vw;
   height: auto;
@@ -362,10 +352,10 @@ ul.footer-links.contact-info {
     color: var(--myOrange);
   }
 }
+
 @media (hover: hover) and (prefers-color-scheme: dark) {
   .nav a:hover {
     color: white;
-    /* background: var(--myBlue); */
   }
 }
 
@@ -383,6 +373,14 @@ ul.footer-links.contact-info {
 }
 
 @media (max-width: 768px) {
+  .footer {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .work-exp-wrap {
+    text-align: center;
+  }
+
   .header-content-container {
     display: block;
     text-align: center;
@@ -406,8 +404,8 @@ ul.footer-links.contact-info {
     margin: initial;
   }
 
-  .degree {
-    /* margin-bottom: 1rem; */
+  .job .heading {
+    justify-content: center;
   }
 }
 
@@ -416,16 +414,6 @@ ul.footer-links.contact-info {
 
 .school-desc {
   margin-top: 0;
-}
-
-@media (max-width: 720px) {
-  .footer {
-    text-align: center;
-    margin: 0 auto;
-  }
-  .work-exp-wrap {
-    text-align: center;
-  }
 }
 
 .job {
@@ -466,7 +454,7 @@ ul.footer-links.contact-info {
     background-color: #2b2b2b;
     color: whitesmoke;
   }
-  /* .nav a, */
+
   a,
   h1,
   h3,
@@ -479,10 +467,6 @@ ul.footer-links.contact-info {
     color: var(--myOrange);
   }
   .education-alpha {
-    background: linear-gradient(
-      to bottom,
-      rgba(38, 38, 38, 0.9),
-      rgba(3, 0, 0, 0.5)
-    );
+    background: linear-gradient(to bottom, rgba(38, 38, 38, 0.9), rgba(3, 0, 0, 0.65));
   }
 }
