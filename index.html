@@ -41,10 +41,17 @@
   <body>
     <div class="nav-container-container">
       <div class="nav-container background-light">
-        <nav class="nav container sides-auto" id="nav">
-          <a href="#">home</a>
-          <a href="#work-experience">work experience</a>
-          <a href="#education">education</a>
+        <nav class="nav container sides-auto" id="nav" aria-label="Main navigation">
+          <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+          <div class="nav-links" id="nav-links">
+            <a href="#">home</a>
+            <a href="#work-experience">work experience</a>
+            <a href="#education">education</a>
+          </div>
         </nav>
       </div>
     </div>
@@ -275,7 +282,6 @@
       <div class="footer">
         <section class="container sides-auto">
           <footer>
-            <h4>Let's Keep in Touch!</h4>
             <!-- Social media and contact links. Add or remove any networks. -->
             <ul class="footer-links contact-info" style="margin-top: 0">
               <a
@@ -306,5 +312,28 @@
         </section>
       </div>
     </main>
+    <script>
+      (function () {
+        var nav = document.getElementById('nav');
+        var toggle = document.querySelector('.nav-toggle');
+        var links = document.getElementById('nav-links');
+        if (!nav || !toggle || !links) return;
+        function openMenu() {
+          nav.classList.add('nav--open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+        function closeMenu() {
+          nav.classList.remove('nav--open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+        toggle.addEventListener('click', function () {
+          if (nav.classList.contains('nav--open')) closeMenu();
+          else openMenu();
+        });
+        links.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', closeMenu);
+        });
+      })();
+    </script>
   </body>
 </html>

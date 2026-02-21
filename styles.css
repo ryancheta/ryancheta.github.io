@@ -5,8 +5,10 @@ p {
   padding: 0;
 }
 :root {
-  --myBlue: #2f5d8c;
-  --myOrange: #d55e2d;
+  --primary: #5c6d7e;      /* soft dusty blue – header, footer, nav (calm & inviting) */
+  --accent: #b45309;       /* amber-700 – headings, hovers */
+  --surface: #fafaf9;      /* stone-50 – page background */
+  --text: #292524;         /* stone-800 – body text */
   --max-width: 1360px;
   font-size: 1.25rem;
 }
@@ -31,17 +33,17 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin: 0;
-  color: #2b2b2b;
+  color: var(--text);
   /* margin-top: 28px; */
   padding: 0;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: smooth;
-  background-color: #f4f4f4;
+  background-color: var(--surface);
 }
 
 a,
 a:active {
-  color: #2b2b2b;
+  color: var(--text);
 }
 
 h3 {
@@ -67,7 +69,7 @@ h5 {
 }
 
 h2 {
-  color: var(--myOrange);
+  color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -97,13 +99,13 @@ h2[class|='header-text'] {
 
 hr {
   height: 1px;
-  background: rgba(178, 92, 0, 0.2);
+  background: rgba(180, 83, 9, 0.2);
   border: none;
   margin: 40px 0;
 }
 
 .header {
-  background: var(--myBlue);
+  background: var(--primary);
 }
 
 .header-content-container {
@@ -112,7 +114,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
+  color: #fafaf9;
 }
 
 .header-content-container > div {
@@ -199,7 +201,7 @@ section p {
 .footer {
   margin: 0 auto;
   padding: 40px 0;
-  background: var(--myBlue);
+  background: var(--primary);
 }
 
 .footer h4 {
@@ -252,7 +254,7 @@ ul.footer-links.contact-info {
   transition: all 0.45s ease;
 }
 .fas.fa-envelope:hover {
-  color: var(--myOrange);
+  color: var(--accent);
   transform: scale(2);
 }
 .fab.fa-twitter {
@@ -268,7 +270,7 @@ ul.footer-links.contact-info {
   transition: all 0.45s ease;
 }
 .fas.fa-columns:hover {
-  color: rgb(178, 92, 0);
+  color: var(--accent);
   transform: scale(2);
 }
 .fab.fa-facebook {
@@ -309,15 +311,19 @@ ul.footer-links.contact-info {
 }
 
 #nav {
+  position: relative;
   top: 0;
   transition: top 0.6s;
   display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .nav-container-container {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   position: fixed;
-  background-color: #f4f4f4;
+  background-color: var(--surface);
   width: 100vw;
   height: auto;
   z-index: 10;
@@ -325,17 +331,50 @@ ul.footer-links.contact-info {
 
 #nav {
   z-index: 100;
-  overflow: hidden;
+  overflow: visible;
   background: rgba(0, 0, 0, 0.01);
   background-color: inherit;
   opacity: 0.9;
+}
+
+/* Hamburger button - hidden on desktop */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--primary);
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.nav-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.nav-toggle-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 1px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-links {
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav a {
   width: 80%;
   flex-basis: fit-content;
   letter-spacing: 0.2vh;
-  color: var(--myBlue);
+  color: var(--primary);
   white-space: nowrap;
   text-transform: uppercase;
   text-align: center;
@@ -347,21 +386,106 @@ ul.footer-links.contact-info {
   cursor: pointer;
 }
 
+/* Mobile: show hamburger, collapse nav into dropdown */
+@media (max-width: 720px) {
+  .nav-container-container,
+  .nav-container,
+  #nav {
+    background-color: #fff !important;
+    background: #fff !important;
+  }
+  #nav {
+    opacity: 1;
+  }
+  .nav-toggle {
+    display: flex;
+    background-color: #fff !important;
+    background: #fff !important;
+  }
+  .nav-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    padding: 0.5rem 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.3s ease, opacity 0.2s ease, visibility 0.2s ease;
+  }
+  #nav.nav--open::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 98;
+  }
+  #nav.nav--open .nav-links {
+    max-height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+  }
+  #nav.nav--open .nav-toggle {
+    position: relative;
+    z-index: 101;
+  }
+  #nav.nav--open .nav-toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  #nav.nav--open .nav-toggle-bar:nth-child(2) {
+    opacity: 0;
+  }
+  #nav.nav--open .nav-toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  #nav .nav-links a {
+    padding: 14px 24px;
+    text-align: center;
+    font-size: 1.25rem;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 721px) {
+  #nav {
+    justify-content: flex-start;
+  }
+  .nav-links {
+    position: static;
+  }
+}
+
 @media (hover: hover) {
   .nav a:hover {
-    color: var(--myOrange);
+    color: var(--accent);
   }
 }
 
 @media (hover: hover) and (prefers-color-scheme: dark) {
   .nav a:hover {
-    color: white;
+    color: #2dd4bf;
   }
 }
 
 @media (hover: hover) and (not(prefers-color-scheme: dark)) {
   .nav a:hover {
-    color: var(--myOrange);
+    color: var(--accent);
   }
 }
 /* Work Experience
@@ -451,8 +575,8 @@ ul.footer-links.contact-info {
   nav,
   html,
   body {
-    background-color: #2b2b2b;
-    color: whitesmoke;
+    background-color: #1c1917;
+    color: #e7e5e4;
   }
 
   a,
@@ -460,13 +584,29 @@ ul.footer-links.contact-info {
   h3,
   h4,
   h5 {
-    color: whitesmoke;
+    color: #e7e5e4;
+  }
+
+  .nav-toggle {
+    color: #e7e5e4;
+  }
+  .nav-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.08);
   }
 
   .nav a {
-    color: var(--myOrange);
+    color: #fbbf24;
+  }
+  @media (max-width: 720px) {
+    .nav-links {
+      background-color: #1c1917;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+    .nav a {
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+    }
   }
   .education-alpha {
-    background: linear-gradient(to bottom, rgba(38, 38, 38, 0.9), rgba(3, 0, 0, 0.65));
+    background: linear-gradient(to bottom, rgba(28, 25, 23, 0.92), rgba(28, 25, 23, 0.75));
   }
 }
