@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="theme-color" content="#050805" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
@@ -29,8 +30,10 @@
     />
 
     <!-- links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Roboto+Slab:300,400,700"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=VT323&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" type="text/css" />
@@ -39,31 +42,61 @@
     <title>Ryan Ancheta | Resume</title>
   </head>
   <body>
-    <div class="nav-container-container">
-      <div class="nav-container background-light">
-        <nav class="nav container sides-auto" id="nav" aria-label="Main navigation">
-          <button type="button" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-            <span class="nav-toggle-bar"></span>
-            <span class="nav-toggle-bar"></span>
-            <span class="nav-toggle-bar"></span>
-          </button>
-          <div class="nav-links" id="nav-links">
-            <a href="#">home</a>
-            <a href="#work-experience">work experience</a>
-            <a href="#education">education</a>
-          </div>
+    <div class="crt" aria-hidden="true"></div>
+
+    <div class="screen">
+      <div class="window">
+        <div class="titlebar">
+          <span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span>
+          <p>ryan@ancheta: ~ — zsh — 80×24</p>
+        </div>
+
+        <nav class="menu" aria-label="Main navigation">
+          <a href="#"><span class="key">F1</span>home</a>
+          <a href="#work-experience"><span class="key">F2</span>experience</a>
+          <a href="#education"><span class="key">F3</span>education</a>
+          <a href="#contact"><span class="key">F4</span>contact</a>
+          <a href="ryan-ancheta-resume.pdf" target="_blank"
+            ><span class="key">F5</span>resume.pdf</a
+          >
         </nav>
-      </div>
-    </div>
-    <!-- // Intro -->
-    <header class="header">
-      <section>
-        <div class="header-bg container sides-auto">
-          <div class="header-content-container">
-            <img src="./assets/avatar.png" loading="lazy" />
+
+        <!-- // Intro -->
+        <header class="block hero">
+          <div class="boot">
+            <p><span class="ok">[  OK  ]</span> Mounted /home/ryan</p>
+            <p><span class="ok">[  OK  ]</span> Loaded react.module</p>
+            <p><span class="ok">[  OK  ]</span> Started ux-daemon.service</p>
+            <p><span class="ok">[  OK  ]</span> Reached target Portfolio</p>
+          </div>
+
+          <h1 class="sr-only" id="header-name">Ryan Ancheta</h1>
+          <pre class="ascii" aria-hidden="true">
+██████╗ ██╗   ██╗ █████╗ ███╗   ██╗
+██╔══██╗╚██╗ ██╔╝██╔══██╗████╗  ██║
+██████╔╝ ╚████╔╝ ███████║██╔██╗ ██║
+██╔══██╗  ╚██╔╝  ██╔══██║██║╚██╗██║
+██║  ██║   ██║   ██║  ██║██║ ╚████║
+╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝</pre
+          >
+          <p class="surname">A N C H E T A</p>
+
+          <div class="profile">
+            <img
+              src="./assets/avatar.png"
+              alt="Portrait of Ryan Ancheta"
+              class="avatar"
+              loading="lazy"
+            />
             <div>
-              <h2 id="header-name" class="header-text-content">Ryan Ancheta</h2>
-              <p>Software Engineer</p>
+              <p class="prompt-line">
+                <span class="ps1">ryan@portfolio:~$</span> whoami
+              </p>
+              <p class="role">
+                &gt; <span id="typed">Software Engineer</span
+                ><span class="cursor">█</span>
+              </p>
               <p class="header-description">
                 I am currently a freelance web developer experienced in ReactJS
                 passionate about elegant user interfaces and pragmatic user
@@ -71,268 +104,317 @@
               </p>
             </div>
           </div>
-        </div>
-      </section>
-    </header>
-    <main role="main">
-      <!-- // Work Experience -->
-      <div class="work-exp-wrap" id="work-experience">
-        <section class="work-exp-wrap container sides-auto">
-          <h2 style="margin-top: 0">Work Experience</h2>
-          <!-- Job Details: copy this whole block to add more jobs -->
-          <div class="jobs">
-            <div class="job">
-              <h3>Software Engineer</h3>
-              <div class="heading">
-                <p>
-                  <a
+        </header>
+
+        <main role="main">
+          <!-- // Work Experience -->
+          <section class="block" id="work-experience">
+            <h2 class="prompt-line">
+              <span class="ps1">ryan@portfolio:~$</span> git log --career
+            </h2>
+            <!-- Job Details: copy this whole block to add more jobs -->
+            <ol class="log">
+              <li class="job">
+                <p class="commit">
+                  commit <span class="hash">7e3c1a9</span>
+                  <span class="ref">(HEAD -&gt; main)</span>
+                </p>
+                <p class="meta">
+                  Company: <a
                     href="https://www.saucey.com"
                     target="_blank"
-                    class="work-name"
+                    rel="noopener"
+                    >Saucey Inc.</a
                   >
-                    Saucey Inc.</a
-                  >&nbsp;•&nbsp;
                 </p>
-                <p class="date-range">03/2020&nbsp;–&nbsp;12/2023</p>
-                <!-- Add as many paragraphs as you need. -->
-              </div>
-              <p>
-                Responsible for implementing new features from design and fix
-                various bugs. Technologies used: ReactJS, JSX, SASS, CSS, Redux,
-                git, misc. third-party libraries.
-              </p>
-            </div>
+                <p class="meta">Date:&nbsp;&nbsp;&nbsp; 03/2020 – 12/2023</p>
+                <div class="msg">
+                  <h3>Software Engineer</h3>
+                  <p>
+                    Responsible for implementing new features from design and
+                    fix various bugs.
+                  </p>
+                  <p class="tags">
+                    <span>ReactJS</span> <span>JSX</span> <span>SASS</span>
+                    <span>CSS</span> <span>Redux</span> <span>git</span>
+                  </p>
+                </div>
+              </li>
 
-            <div class="job">
-              <h3>Quality Assurance Specialist</h3>
-              <div class="heading">
-                <p>
-                  <a
+              <li class="job">
+                <p class="commit">commit <span class="hash">b42f0d6</span></p>
+                <p class="meta">
+                  Company: <a
                     href="https://www.saucey.com"
                     target="_blank"
-                    class="work-name"
+                    rel="noopener"
+                    >Saucey Inc.</a
                   >
-                    Saucey Inc.</a
-                  >&nbsp;•&nbsp;
                 </p>
-                <div class="date-range">02/2019&nbsp;–&nbsp;03/2020</div>
-              </div>
-              <!-- Add as many paragraphs as you need. -->
-              <p>
-                Provide test coverage – both manual and automated – around all
-                software products offered by Saucey using Appium. Appium
-                leverages native testing frameworks and superset of Selenium
-                WebDriver. Perform regression, user, acceptance and smoke
-                testing prior to releasing new software to the market Maintain
-                bug database and test suites as functionality of software
-                systems expand.
-              </p>
-            </div>
+                <p class="meta">Date:&nbsp;&nbsp;&nbsp; 02/2019 – 03/2020</p>
+                <div class="msg">
+                  <h3>Quality Assurance Specialist</h3>
+                  <p>
+                    Provide test coverage – both manual and automated – around
+                    all software products offered by Saucey using Appium.
+                    Appium leverages native testing frameworks and superset of
+                    Selenium WebDriver. Perform regression, user, acceptance and
+                    smoke testing prior to releasing new software to the market.
+                    Maintain bug database and test suites as functionality of
+                    software systems expand.
+                  </p>
+                  <p class="tags">
+                    <span>Appium</span> <span>Selenium WebDriver</span>
+                    <span>Regression testing</span>
+                  </p>
+                </div>
+              </li>
 
-            <div class="job">
-              <h3>UX/UI Designer</h3>
-              <div class="heading">
-                <p>
-                  <a
+              <li class="job">
+                <p class="commit">commit <span class="hash">19ac5e2</span></p>
+                <p class="meta">
+                  Company: <a
                     href="https://www.nationalcarrierexchange.com"
-                    target="__blank"
-                    class="work-name"
+                    target="_blank"
+                    rel="noopener"
+                    >National Produce Exchange</a
                   >
-                    National Produce Exchange</a
-                  >&nbsp;•&nbsp;
                 </p>
-                <div class="date-range">11/2014 – 03/2015</div>
-              </div>
-              <p>
-                Designed initial UI and established User Experience based on
-                business requirements. Worked closely with developers.
-                establishing identity and brand.
-              </p>
-            </div>
+                <p class="meta">Date:&nbsp;&nbsp;&nbsp; 11/2014 – 03/2015</p>
+                <div class="msg">
+                  <h3>UX/UI Designer</h3>
+                  <p>
+                    Designed initial UI and established User Experience based on
+                    business requirements. Worked closely with developers,
+                    establishing identity and brand.
+                  </p>
+                  <p class="tags">
+                    <span>UI design</span> <span>UX</span>
+                    <span>Branding</span>
+                  </p>
+                </div>
+              </li>
 
-            <div class="job">
-              <h3>Scrum Master</h3>
-              <div class="heading">
-                <p>
-                  <a
+              <li class="job">
+                <p class="commit">
+                  commit <span class="hash">0f9d3b8</span>
+                  <span class="ref">(tag: v1.0)</span>
+                </p>
+                <p class="meta">
+                  Company: <a
                     href="http://www.textplus.com"
-                    target="new"
-                    class="work-name"
+                    target="_blank"
+                    rel="noopener"
+                    >TextPlus Inc.</a
                   >
-                    TextPlus Inc.</a
-                  >&nbsp;•&nbsp;
                 </p>
-                <span class="date-range">09/2011&nbsp;–&nbsp;06/2014</span>
-              </div>
-              <p>
-                Managed team's cadence and workflow throughout sprints. Led team
-                Scrum rituals
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!-- end of Job Details block. -->
+                <p class="meta">Date:&nbsp;&nbsp;&nbsp; 09/2011 – 06/2014</p>
+                <div class="msg">
+                  <h3>Scrum Master</h3>
+                  <p>
+                    Managed team's cadence and workflow throughout sprints. Led
+                    team Scrum rituals.
+                  </p>
+                  <p class="tags"><span>Scrum</span> <span>Agile</span></p>
+                </div>
+              </li>
+            </ol>
+            <!-- end of Job Details block. -->
+          </section>
 
-      <!-- // Education -->
-      <div class="education" id="education">
-        <div class="education-alpha">
-          <section class="container sides-auto">
-            <div>
-              <h2>Education</h2>
-            </div>
-            <div class="education-item-container">
-              <div class="education-item">
-                <a href="https://www.csun.edu" target="_blank">
+          <!-- // Education -->
+          <section class="block" id="education">
+            <h2 class="prompt-line">
+              <span class="ps1">ryan@portfolio:~$</span> ls -l ~/education
+            </h2>
+            <p class="total">total 3</p>
+            <ul class="edu-list">
+              <li class="edu">
+                <div class="edu-row">
+                  <span class="perm">drwxr-xr-x</span>
+                  <span class="years">2017–2020</span>
+                  <a
+                    href="https://www.csun.edu"
+                    target="_blank"
+                    rel="noopener"
+                    class="dir"
+                    >csun/</a
+                  >
+                </div>
+                <div class="edu-body">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/CSUNS.svg/1200px-CSUNS.svg.png"
-                    loading="lazy"
-                    style="width: 52px; height: auto"
+                    src="/assets/csun_seal.svg"
+                    alt="CSUN seal"
                     class="school-logo"
+                    loading="lazy"
                   />
-                </a>
-                <div>
-                  <h3 class="degree">B.S. &dash; Computer Science</h3>
-                  <div class="school-name-year-detail">
-                    <a
-                      href="http://www.csun.edu"
-                      target="_blank"
-                      class="school-name"
-                    >
-                      <p>California State University Northridge</p>
-                    </a>
-                    <p>&nbsp;2017 – &nbsp;2020</p>
+                  <div>
+                    <h3>B.S. — Computer Science</h3>
+                    <p class="school-name">
+                      California State University Northridge
+                    </p>
+                    <p class="school-desc">
+                      Completed core upper-division Computer Science classes.
+                      Advanced Computer Architecture, Discrete Structures,
+                      Software Engineering. Additionally, completed both Physics
+                      (Classical Mechanics + Electricity &amp; Magnetism),
+                      Linear Algebra
+                    </p>
                   </div>
                 </div>
-              </div>
-              <p class="school-desc">
-                Completed core upper-division Computer Science classes. Advanced
-                Computer Architecture, Discrete Structures, Software
-                Engineering. Additionally, completed both Physics (Classical
-                Mechanics + Electricity & Magenetism), Linear Algebra
-              </p>
-            </div>
-            <div class="education-item-container">
-              <div class="education-item">
-                <a href="https://www.piercecollege.edu" target="_blank">
+              </li>
+
+              <li class="edu">
+                <div class="edu-row">
+                  <span class="perm">drwxr-xr-x</span>
+                  <span class="years">2015–2017</span>
+                  <a
+                    href="https://www.piercecollege.edu"
+                    target="_blank"
+                    rel="noopener"
+                    class="dir"
+                    >pierce-college/</a
+                  >
+                </div>
+                <div class="edu-body">
                   <img
                     src="https://static.wixstatic.com/media/e28e75_eaf3989d148040e1ba2fc01089e773c7.gif"
-                    loading="lazy"
-                    style="width: 52px; height: auto"
+                    alt="Pierce College logo"
                     class="school-logo"
+                    loading="lazy"
                   />
-                </a>
-                <div>
-                  <h3 class="degree">
-                    A.A. &dash; concentration in Science, Technology,
-                    Engineering & Math
-                  </h3>
-                  <div class="school-name-year-detail">
-                    <a
-                      href="https://www.piercecollege.edu"
-                      target="_blank"
-                      class="school-name"
-                    >
-                      <p>Los Angeles Pierce College</p>
-                    </a>
-                    <p>&nbsp;2015 – &nbsp;2017</p>
+                  <div>
+                    <h3>A.A. — Science, Technology, Engineering &amp; Math</h3>
+                    <p class="school-name">Los Angeles Pierce College</p>
+                    <p class="school-desc">
+                      Completed all lower division general education classes and
+                      the following computer science classes. C++, Object
+                      Oriented C++, Java, Data Structures, Advanced Data
+                      Structures, Computer Architecture (Assembly Language), C
+                    </p>
                   </div>
                 </div>
-              </div>
-              <p class="school-desc">
-                Completed all lower division general education classes and the
-                following computer science classes. C++, Object Oriented C++,
-                Java, Data Structures, Advanced Data Structures, Computer
-                Architecture (Assembly Language), C
-              </p>
-            </div>
+              </li>
 
-            <div class="education-item-container">
-              <div class="education-item">
-                <a href="https://www.lacc.edu" target="_blank">
+              <li class="edu">
+                <div class="edu-row">
+                  <span class="perm">drwxr-xr-x</span>
+                  <span class="years">2011–2015</span>
+                  <a
+                    href="https://www.lacitycollege.edu"
+                    target="_blank"
+                    rel="noopener"
+                    class="dir"
+                    >lacc/</a
+                  >
+                </div>
+                <div class="edu-body">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f6/Los_Angeles_City_College_seal.svg/800px-Los_Angeles_City_College_seal.svg.png"
-                    loading="lazy"
-                    style="width: auto; height: 53px"
+                    src="/assets/lacc_logo.svg"
+                    alt="LACC logo"
                     class="school-logo"
+                    loading="lazy"
                   />
-                </a>
-                <div>
-                  <div class="school-name-year-detail">
-                    <a
-                      href="https://www.lacitycollege.edu"
-                      target="_blank"
-                      class="school-name"
-                    >
-                      <h3>Los Angeles City College</h3>
-                    </a>
-                    <p>&nbsp;2011 – &nbsp;2015</p>
+                  <div>
+                    <h3>General Education</h3>
+                    <p class="school-name">Los Angeles City College</p>
+                    <p class="school-desc">
+                      Completed several lower division general education classes
+                    </p>
                   </div>
                 </div>
-              </div>
-              <p class="school-desc">
-                Completed several lower division general education classes
-              </p>
-            </div>
-          </section>
-        </div>
-      </div>
-      <!-- End of school details. -->
-      <!-- // Footer & contact info -->
-      <div class="footer">
-        <section class="container sides-auto">
-          <footer>
-            <!-- Social media and contact links. Add or remove any networks. -->
-            <ul class="footer-links contact-info" style="margin-top: 0">
-              <a
-                href="mailto:ryan@ryanancheta.com?subject=Hey! I found you from your website!"
-                style="padding-left: 0"
-                ><i class="fas fa-envelope"></i
-              ></a>
-              <a href="http://www.ryanancheta.com" target="_blank"
-                ><i size="med" class="fas fa-columns"></i
-              ></a>
-              <a href="http://www.twitter.com" target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/ryan-ancheta"
-                target="_blank"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a href="https://facebook.com" target="_blank"
-                ><i class="fab fa-facebook"></i
-              ></a>
+              </li>
             </ul>
-            <p>Copyright 2019 by Ryan Ancheta</p>
+          </section>
+
+          <!-- // Footer & contact info -->
+          <footer class="block" id="contact">
+            <h2 class="prompt-line">
+              <span class="ps1">ryan@portfolio:~$</span> ./contact.sh --list
+            </h2>
+            <!-- Social media and contact links. Add or remove any networks. -->
+            <ul class="contact">
+              <li>
+                <a
+                  href="mailto:ryan@ryanancheta.com?subject=Hey! I found you from your website!"
+                  ><i class="fas fa-envelope"></i> --email</a
+                >
+              </li>
+              <li>
+                <a href="http://www.ryanancheta.com" target="_blank" rel="noopener"
+                  ><i class="fas fa-columns"></i> --website</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ryan-ancheta"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fab fa-linkedin"></i> --linkedin</a
+                >
+              </li>
+              <li>
+                <a href="http://www.twitter.com" target="_blank" rel="noopener"
+                  ><i class="fab fa-twitter"></i> --twitter</a
+                >
+              </li>
+              <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                  ><i class="fab fa-facebook"></i> --facebook</a
+                >
+              </li>
+            </ul>
+            <p class="prompt-line last">
+              <span class="ps1">ryan@portfolio:~$</span>
+              <span class="cursor">█</span>
+            </p>
+            <p class="copyright">
+              © <span id="year">2019</span> Ryan Ancheta ·
+              <a href="#">cd ~ ↑</a>
+            </p>
           </footer>
-          <div class="back-to-top">
-            <a href="#">&uarr;</a>
-          </div>
-        </section>
+        </main>
       </div>
-    </main>
+    </div>
+
     <script>
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Typing effect for the role line
       (function () {
-        var nav = document.getElementById('nav');
-        var toggle = document.querySelector('.nav-toggle');
-        var links = document.getElementById('nav-links');
-        if (!nav || !toggle || !links) return;
-        function openMenu() {
-          nav.classList.add('nav--open');
-          toggle.setAttribute('aria-expanded', 'true');
+        var el = document.getElementById("typed");
+        if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+          return;
+        var words = [
+          "Software Engineer",
+          "Front-End Developer",
+          "React Enthusiast",
+          "UX-minded Builder",
+        ];
+        var w = 0,
+          i = words[0].length,
+          deleting = true;
+        function tick() {
+          var word = words[w];
+          el.textContent = word.slice(0, i);
+          if (deleting) {
+            if (i-- === 0) {
+              deleting = false;
+              w = (w + 1) % words.length;
+              i = 0;
+            }
+            setTimeout(tick, 45);
+          } else {
+            if (i++ === word.length) {
+              deleting = true;
+              setTimeout(tick, 2200);
+            } else {
+              setTimeout(tick, 85);
+            }
+          }
         }
-        function closeMenu() {
-          nav.classList.remove('nav--open');
-          toggle.setAttribute('aria-expanded', 'false');
-        }
-        toggle.addEventListener('click', function () {
-          if (nav.classList.contains('nav--open')) closeMenu();
-          else openMenu();
-        });
-        links.querySelectorAll('a').forEach(function (a) {
-          a.addEventListener('click', closeMenu);
-        });
+        setTimeout(tick, 3000);
       })();
     </script>
   </body>
